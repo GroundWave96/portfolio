@@ -1,6 +1,7 @@
 {
   "header": {
     "about": "Sobre Mim",
+    "experience": "Experiência",
     "projects": "Projetos",
     "contact": "Contato"
   },
@@ -17,5 +18,8 @@
     "p2": "Como co-fundador da Apex Dev Studio, foco em transformar problemas complexos em produtos digitais de alta performance. Minha bagagem técnica me permite entender todo o ciclo de dados da aplicação, garantindo que o Front-end não seja apenas visual, mas performático e conectado de forma inteligente ao backend.",
     "skills_primary": "Front-end & UI",
     "skills_secondary": "Engenharia & Dados"
+  },
+  "experience": {
+    "title": "Experiência"
   }
 }

@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className={`${inter.variable} h-full antialiased scroll-smooth`}>
       <body className="font-sans bg-zinc-950 text-zinc-50 antialiased selection:bg-zinc-700 selection:text-white">
         <Background />
-        <ScrollToTop /> {/* Adicionamos o componente aqui */}
+        <ScrollToTop /> 
         {children}
       </body>
     </html>
