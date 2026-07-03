@@ -3,8 +3,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence, Transition } from "framer-motion";
 import { Logo } from "./Logo";
+import { Menu } from "lucide-react";
 
-export function Header() {
+export function Header({ showLogo = true }: { showLogo?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -27,11 +28,16 @@ export function Header() {
       className="fixed top-6 left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 overflow-hidden rounded-4xl bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_12px_32px_0_rgba(0,0,0,0.4)]"
     >
       <div className="flex h-14 items-center justify-between px-6">
-        <motion.div layout className="shrink-0">
-          <a href="#" className="flex items-center transition-opacity hover:opacity-80">
-            <Logo className="h-5 w-auto text-zinc-100" />
-          </a>
-        </motion.div>
+        
+        <div className="shrink-0 flex items-center min-w-12.5">
+          {showLogo && (
+            <motion.div layoutId="logo-container" className="flex items-center">
+              <a href="#" className="transition-opacity hover:opacity-80">
+                <Logo className="h-5 w-auto text-zinc-100" />
+              </a>
+            </motion.div>
+          )}
+        </div>
 
         <nav className="hidden md:block">
           <ul className="flex items-center gap-6">
