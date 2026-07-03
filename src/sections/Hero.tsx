@@ -49,9 +49,12 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
                     <a href="https://wa.me/5511953725013?text=Ol%C3%A1,%20Gabriel!%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" className={`${glassClasses} h-12 w-12`}>
                         <SocialIcon name="whatsapp" className={iconClasses} />
                     </a>
-                    <button onClick={handleCopyEmail} className="group relative flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_8px_16px_0_rgba(0,0,0,0.3)] transition-all hover:bg-zinc-800/50 text-zinc-100">
+                    <button
+                        onClick={handleCopyEmail}
+                        className="group relative flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_8px_16px_0_rgba(0,0,0,0.3)] transition-all hover:bg-zinc-800/50 text-zinc-100">
                         {emailCopied ? <Check className="h-5 w-5 text-green-400" /> : <Mail className="h-5 w-5" />}
-                        <span className="absolute -bottom-10 scale-0 rounded-lg bg-zinc-800 px-3 py-1.5 text-xs text-white opacity-0 shadow-lg transition-all group-hover:scale-100 group-hover:opacity-100 whitespace-nowrap pointer-events-none">
+
+                        <span className={`absolute -bottom-12 rounded-lg bg-zinc-800 px-3 py-1.5 text-xs text-white shadow-lg transition-all whitespace-nowrap pointer-events-none ${emailCopied ? "opacity-100 scale-100" : "opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"}`}>
                             {emailCopied ? dict.hero.tooltip_copied : dict.hero.tooltip_copy}
                         </span>
                     </button>
