@@ -1,0 +1,103 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence, Transition } from "framer-motion";
+import { Logo } from "./Logo";
+
+export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Sobre Mim", href: "#sobre" },
+    { name: "Projetos", href: "#projetos" },
+    { name: "Contato", href: "#contato" },
+  ];
+
+  const iosSpring: Transition = {
+    type: "spring",
+    stiffness: 300,
+    damping: 25,
+    mass: 0.5,
+  };
+
+  return (
+    <motion.header
+      layout
+      transition={iosSpring}
+      className="fixed top-6 left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 overflow-hidden rounded-4xl bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_12px_32px_0_rgba(0,0,0,0.4)]"
+    >
+      <div className="flex h-14 items-center justify-between px-6">
+        <motion.div layout className="shrink-0">
+          <a href="#" className="flex items-center transition-opacity hover:opacity-80">
+            <Logo className="h-5 w-auto text-zinc-100" />
+          </a>
+        </motion.div>
+
+        <nav className="hidden md:block">
+          <ul className="flex items-center gap-6">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <motion.div layout className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="relative flex h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-full hover:bg-white/5 transition-colors focus:outline-none"
+            aria-label="Alternar menu"
+          >
+            <motion.span
+              animate={isOpen ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
+              transition={iosSpring}
+              className="block h-0.5 w-5 rounded-full bg-zinc-300"
+            />
+            <motion.span
+              animate={isOpen ? { rotate: -45, y: -4 } : { rotate: 0, y: 0 }}
+              transition={iosSpring}
+              className="block h-0.5 w-5 rounded-full bg-zinc-300"
+            />
+          </button>
+        </motion.div>
+      </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.nav
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={iosSpring}
+            className="md:hidden border-t border-white/5"
+          >
+            <ul className="flex flex-col gap-4 px-6 pb-6 pt-4">
+              {navLinks.map((link) => (
+                <motion.li 
+                  key={link.name}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ ...iosSpring, delay: 0.1 }}
+                >
+                  <a
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block text-[17px] font-normal tracking-tight text-zinc-300 transition-colors hover:text-white"
+                  >
+                    {link.name}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </motion.header>
+  );
+}
