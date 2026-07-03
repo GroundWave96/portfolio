@@ -6,9 +6,16 @@
   },
   "hero": {
     "name": "Gabriel Pimentel",
-    "role": "Desenvolvedor de Software focado em criar experiências digitais fluidas e minimalistas.",
+    "role": "Desenvolvedor Front-end | Criando experiências digitais fluidas e minimalistas.",
     "btn_projects": "Ver Projetos",
     "tooltip_copy": "Copiar e-mail",
     "tooltip_copied": "Copiado!"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "p1": "Engenheiro de formação e desenvolvedor por paixão. Minha trajetória une o rigor analítico da engenharia de dados com a criatividade do desenvolvimento web.",
+    "p2": "Como co-fundador da Apex Dev Studio, foco em transformar problemas complexos em produtos digitais de alta performance. Minha bagagem técnica me permite entender todo o ciclo de dados da aplicação, garantindo que o Front-end não seja apenas visual, mas performático e conectado de forma inteligente ao backend.",
+    "skills_primary": "Front-end & UI",
+    "skills_secondary": "Engenharia & Dados"
   }
 }

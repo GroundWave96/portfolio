@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Header } from "@/components/Header";
 import { SplashScreen } from "@/components/SplashScreen";
 import { Hero } from "@/sections/Hero";
+import { About } from "@/sections/About";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -15,9 +16,7 @@ export default function Home() {
       
       <main>
         <Hero showSplash={showSplash} />
-        {/* Futuramente: */}
-        {/* <About /> */}
-        {/* <Projects /> */}
+        <About />
       </main>
     </>
   );
