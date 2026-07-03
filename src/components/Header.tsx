@@ -4,14 +4,15 @@ import { useState } from "react";
 import { motion, AnimatePresence, Transition } from "framer-motion";
 import { Logo } from "./Logo";
 import { Menu } from "lucide-react";
+import dict from "@/locales/pt.json";
 
 export function Header({ showLogo = true }: { showLogo?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Sobre Mim", href: "#sobre" },
-    { name: "Projetos", href: "#projetos" },
-    { name: "Contato", href: "#contato" },
+    { name: dict.header.about, href: "#sobre" },
+    { name: dict.header.projects, href: "#projetos" },
+    { name: dict.header.contact, href: "#contato" },
   ];
 
   const iosSpring: Transition = {

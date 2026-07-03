@@ -1,0 +1,14 @@
+{
+  "header": {
+    "about": "Sobre Mim",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "name": "Gabriel Pimentel",
+    "role": "Desenvolvedor de Software focado em criar experiências digitais fluidas e minimalistas.",
+    "btn_projects": "Ver Projetos",
+    "tooltip_copy": "Copiar e-mail",
+    "tooltip_copied": "Copiado!"
+  }
+}
