@@ -24,13 +24,13 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Teste",
-    description: "Teste.",
-    images: ["/projects/f1-1.webp", "/projects/f1-2.webp", "/projects/f1-3.webp", "/projects/f1-4.webp"],
-    tags: ["Teste", "Teste 2"],
+    title: "Apex Dev Studio",
+    description: "Landing page oficial da agência Apex Dev Studio, focada em soluções web de alta performance e identidade visual.",
+    images: ["/projects/apex-1.webp"],
+    tags: ["Next.js", "Web Design", "Branding"],
     links: {
-      live: "https://f1dash.pages.dev/",
-      repo: "https://github.com/GroundWave96/f1-dashboard",
+      live: "https://apexdevstudio.pages.dev/",
+      repo: "",
     },
   },
 ];
