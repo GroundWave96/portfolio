@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import dict from "@/locales/pt.json";
 
@@ -19,7 +18,6 @@ export function About() {
                 <h2 className="mb-8 text-3xl font-medium text-zinc-100">
                     {dict.about.title}
                 </h2>
-
                 <div className="space-y-6 text-zinc-400">
                     <p>{dict.about.p1}</p>
                     <p>{dict.about.p2}</p>
@@ -31,7 +29,7 @@ export function About() {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {primarySkills.map((skill) => (
-                            <span key={skill} className="rounded-full bg-zinc-900/50 px-4 py-1.5 text-sm text-zinc-300 border border-zinc-800">
+                            <span key={skill} className="text-xs font-medium text-zinc-300 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
                                 {skill}
                             </span>
                         ))}
@@ -44,7 +42,7 @@ export function About() {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {secondarySkills.map((skill) => (
-                            <span key={skill} className="rounded-full bg-zinc-900/30 px-4 py-1.5 text-sm text-zinc-500 border border-zinc-800/50">
+                            <span key={skill} className="text-xs font-medium text-zinc-500 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
                                 {skill}
                             </span>
                         ))}
