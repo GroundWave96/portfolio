@@ -8,6 +8,7 @@ import { About } from "@/sections/About";
 import { Projects } from "@/sections/Projects";
 import { Experience } from "@/sections/Experience";
 import { Education } from "@/sections/Education";
+import { Courses } from "@/sections/Courses";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Experience />
         <Education />
+        <Courses />
         <Projects />
       </main>
     </>

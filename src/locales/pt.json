@@ -24,6 +24,9 @@
     "title": "Experiência"
   },
   "education": {
-    "title": "Formação & Cursos"
+    "title": "Formação"
+  },
+  "courses": {
+    "title": "Cursos"
   }
 }
