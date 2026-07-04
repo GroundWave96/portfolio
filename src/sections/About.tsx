@@ -43,7 +43,7 @@ export function About() {
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {secondarySkills.map((skill) => (
-                            <span key={skill} className="text-xs font-medium text-zinc-500 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
+                            <span key={skill} className="text-xs font-medium text-zinc-300 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
                                 {skill}
                             </span>
                         ))}

@@ -37,7 +37,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
         <div className="shrink-0 flex items-center min-w-12.5">
           {showLogo && (
             <motion.div layoutId="logo-container" className="flex items-center">
-              <a href="#" className="transition-opacity hover:opacity-80">
+              <a href="#" className="transition-opacity hover:opacity-80" aria-label="Home">
                 <Logo className="h-5 w-auto text-zinc-100" />
               </a>
             </motion.div>

@@ -18,7 +18,7 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
           
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
             <h3 className="text-xl font-semibold text-zinc-100">{item.title}</h3>
-            <span className="text-sm font-medium text-zinc-500 mt-1 sm:mt-0">
+            <span className="text-sm font-medium text-zinc-300 mt-1 sm:mt-0">
               {item.period}
             </span>
           </div>
@@ -34,7 +34,7 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
           {item.tags && item.tags.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {item.tags.map((tag) => (
-                <span key={tag} className="text-xs font-medium text-zinc-500 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
+                <span key={tag} className="text-xs font-medium text-zinc-300 px-2 py-1 rounded bg-zinc-900 border border-zinc-800">
                   {tag}
                 </span>
               ))}
