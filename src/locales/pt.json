@@ -4,7 +4,8 @@
     "experience": "Experiência",
     "education": "Educação",
     "projects": "Projetos",
-    "courses": "Cursos"
+    "courses": "Cursos",
+    "contact": "Contato"
   },
   "hero": {
     "name": "Gabriel Pimentel",
@@ -28,5 +29,11 @@
   },
   "courses": {
     "title": "Cursos"
+  },
+  "contact": {
+    "title": "Gostou do que viu?",
+    "description": "Estou sempre aberto a novos desafios e parcerias. Vamos conversar?",
+    "btn_contact": "Entrar em contato",
+    "btn_cv": "Ver currículo"
   }
 }

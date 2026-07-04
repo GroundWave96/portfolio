@@ -15,6 +15,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
     { name: dict.header.education, href: "#educacao" },
     { name: dict.header.courses, href: "#cursos" },
     { name: dict.header.projects, href: "#projetos" },
+    { name: dict.header.contact, href: "#contato" },
   ];
 
   const iosSpring: Transition = {
