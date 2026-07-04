@@ -16,7 +16,7 @@ export const projects: Project[] = [
     title: "F1 Dashboard",
     description: "Painel interativo para acompanhamento de F1 em atualizado com telemetria e dados das corridas e campeonatos.",
     images: ["/projects/f1-1.webp", "/projects/f1-2.webp", "/projects/f1-3.webp", "/projects/f1-4.webp"],
-    tags: ["Next.js", "TypeScript", "Tailwind", "API", "Dashboard"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "API", "Git", "Dashboard"],
     links: {
       live: "https://f1dash.pages.dev/",
       repo: "https://github.com/GroundWave96/f1-dashboard",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     title: "Apex Dev Studio",
     description: "Landing page oficial da agência Apex Dev Studio, focada em soluções web de alta performance e identidade visual.",
     images: ["/projects/apex-1.webp"],
-    tags: ["Next.js", "Web Design", "Branding"],
+    tags: ["Next.js", "Web Design", "Branding", "Figma", "Tailwind CSS", "Git", "SEO"],
     links: {
       live: "https://apexdevstudio.pages.dev/",
       repo: "",
