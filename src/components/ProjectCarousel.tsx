@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -23,6 +24,9 @@ export function ProjectCarousel({ images }: { images: string[] }) {
         <motion.img
           key={images[index]}
           src={images[index]}
+          alt="Imagem de demonstração do projeto"
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, zIndex: 1 }}

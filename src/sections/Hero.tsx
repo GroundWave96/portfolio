@@ -13,7 +13,7 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
     const glassClasses = "flex h-12 items-center justify-center rounded-full bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_8px_16px_0_rgba(0,0,0,0.3)] transition-all hover:bg-zinc-800/50";
 
     const handleCopyEmail = () => {
-        navigator.clipboard.writeText("seu.email@exemplo.com");
+        navigator.clipboard.writeText("gabrielhfp96@gmail.com");
         setEmailCopied(true);
         setTimeout(() => setEmailCopied(false), 2000);
     };
@@ -41,17 +41,36 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
                 </a>
 
                 <div className="flex w-full items-center justify-between">
-                    <a href="https://github.com/GroundWave96" target="_blank" rel="noopener noreferrer" className={`${glassClasses} h-12 w-12`}>
+                    <a 
+                        href="https://github.com/GroundWave96" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-label="Acessar meu perfil no GitHub"
+                        className={`${glassClasses} h-12 w-12`}
+                    >
                         <SocialIcon name="github" className={iconClasses} />
                     </a>
-                    <a href="https://www.linkedin.com/in/gabrielhfpimentel/" target="_blank" rel="noopener noreferrer" className={`${glassClasses} h-12 w-12`}>
+                    <a 
+                        href="https://www.linkedin.com/in/gabrielhfpimentel/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-label="Acessar meu perfil no LinkedIn"
+                        className={`${glassClasses} h-12 w-12`}
+                    >
                         <SocialIcon name="linkedin" className={iconClasses} />
                     </a>
-                    <a href="https://wa.me/5511953725013?text=Ol%C3%A1,%20Gabriel!%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" className={`${glassClasses} h-12 w-12`}>
+                    <a 
+                        href="https://wa.me/5511953725013?text=Ol%C3%A1,%20Gabriel!%20Visitei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-label="Entrar em contato via WhatsApp"
+                        className={`${glassClasses} h-12 w-12`}
+                    >
                         <SocialIcon name="whatsapp" className={iconClasses} />
                     </a>
                     <button
                         onClick={handleCopyEmail}
+                        aria-label={emailCopied ? t("hero", "tooltip_copied") : t("hero", "tooltip_copy")}
                         className="group relative flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_8px_16px_0_rgba(0,0,0,0.3)] transition-all hover:bg-zinc-800/50 text-zinc-100">
                         {emailCopied ? <Check className="h-5 w-5 text-green-400" /> : <Mail className="h-5 w-5" />}
 
