@@ -11,6 +11,8 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
 
   const navLinks = [
     { name: dict.header.about, href: "#sobre" },
+    { name: dict.header.experience, href: "#experiencia" },
+    { name: dict.header.education, href: "#educacao" },
     { name: dict.header.projects, href: "#projetos" },
     { name: dict.header.contact, href: "#contato" },
   ];
