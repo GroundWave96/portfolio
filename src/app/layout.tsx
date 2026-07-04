@@ -12,8 +12,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gabriel Pimentel | Portfólio",
-  description: "Desenvolvedor de Software e UI/UX",
+  title: "Gabriel Pimentel | Desenvolvedor Front-end",
+  description: "Engenheiro de formação e desenvolvedor por paixão. Criando experiências digitais fluidas, minimalistas e de alta performance.",
+  openGraph: {
+    title: "Gabriel Pimentel | Desenvolvedor Front-end",
+    description: "Criando experiências digitais fluidas e de alta performance.",
+    url: "https://gabrielpimentel.pages.dev/",
+    siteName: "Gabriel Pimentel Portfolio",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
