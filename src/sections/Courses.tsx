@@ -21,7 +21,7 @@ export function Courses() {
               key={course.id} 
               className="flex flex-col justify-between h-full p-4 rounded-lg bg-zinc-900/20 border border-zinc-800 hover:border-zinc-700 transition-colors"
             >
-              <h4 className="font-medium text-zinc-200 text-sm">{course.title}</h4>
+              <h3 className="font-medium text-zinc-200 text-sm">{course.title}</h3>
               <p className="text-xs text-zinc-300 mt-4">
                 {course.institution} • {course.year} {course.language && `• ${course.language}`}
               </p>
