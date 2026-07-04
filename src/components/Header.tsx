@@ -13,8 +13,8 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
     { name: dict.header.about, href: "#sobre" },
     { name: dict.header.experience, href: "#experiencia" },
     { name: dict.header.education, href: "#educacao" },
+    { name: dict.header.courses, href: "#cursos" },
     { name: dict.header.projects, href: "#projetos" },
-    { name: dict.header.contact, href: "#contato" },
   ];
 
   const iosSpring: Transition = {
