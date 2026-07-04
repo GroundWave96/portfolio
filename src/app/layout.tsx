@@ -12,8 +12,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gabrielpimentel.pages.dev/"),
+
   title: "Gabriel Pimentel | Desenvolvedor Front-end",
   description: "Engenheiro de formação e desenvolvedor por paixão. Criando experiências digitais fluidas, minimalistas e de alta performance.",
+
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
+
   openGraph: {
     title: "Gabriel Pimentel | Desenvolvedor Front-end",
     description: "Criando experiências digitais fluidas e de alta performance.",
@@ -21,7 +29,23 @@ export const metadata: Metadata = {
     siteName: "Gabriel Pimentel Portfolio",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Gabriel Pimentel Portfolio",
+      },
+    ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Gabriel Pimentel | Desenvolvedor Front-end",
+    description: "Engenheiro de formação e desenvolvedor por paixão. Criando experiências digitais fluidas, minimalistas e de alta performance.",
+    images: ["/opengraph-image.png"],
+  },
+  
   robots: {
     index: true,
     follow: true,
