@@ -12,8 +12,8 @@ export function LanguageSwitcher() {
           key={l}
           type="button"
           onClick={() => setLang(l)}
-          aria-label={`Alterar idioma para ${l.toUpperCase()}`}
-          className={`min-w-9 min-h-9 flex items-center justify-center rounded-md text-[10px] font-bold uppercase transition-colors ${lang === l
+          aria-label={`Alterar idioma para ${l}`}
+          className={`text-[10px] font-bold uppercase transition-colors ${lang === l
               ? "text-zinc-100"
               : "text-zinc-600 hover:text-zinc-400"
             }`}
