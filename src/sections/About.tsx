@@ -1,10 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import dict from "@/locales/pt.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function About() {
     const primarySkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "GSAP"];
     const secondarySkills = ["SQL", "CI/CD", "C#", "Python", "VBA"];
+    const { t } = useLanguage();
 
     return (
         <section id="sobre" className="py-24 px-6">
@@ -16,16 +17,16 @@ export function About() {
                 className="mx-auto max-w-2xl"
             >
                 <h2 className="mb-8 text-3xl font-medium text-zinc-100">
-                    {dict.about.title}
+                    {t("about", "title")}
                 </h2>
                 <div className="space-y-6 text-zinc-400">
-                    <p>{dict.about.p1}</p>
-                    <p>{dict.about.p2}</p>
+                    <p>{t("about", "p1")}</p>
+                    <p>{t("about", "p2")}</p>
                 </div>
 
                 <div className="mt-10">
                     <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                        {dict.about.skills_primary}
+                        {t("about", "skills_primary")}
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {primarySkills.map((skill) => (
@@ -38,7 +39,7 @@ export function About() {
 
                 <div className="mt-8">
                     <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-500">
-                        {dict.about.skills_secondary}
+                        {t("about", "skills_secondary")}
                     </h3>
                     <div className="flex flex-wrap gap-2">
                         {secondarySkills.map((skill) => (

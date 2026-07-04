@@ -1,9 +1,10 @@
-// src/sections/Contact.tsx
+"use client";
 import { motion } from "framer-motion";
-import dict from "@/locales/pt.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function Contact() {
   const glassClasses = "px-6 py-3 rounded-full font-medium transition-all hover:scale-105 active:scale-95";
+  const { t } = useLanguage();
 
   return (
     <section id="contato" className="py-24 px-6">
@@ -15,10 +16,10 @@ export function Contact() {
         className="mx-auto max-w-xl text-center"
       >
         <h2 className="text-3xl font-medium text-zinc-100 mb-4">
-          {dict.contact.title}
+          {t("contact", "title")}
         </h2>
         <p className="text-zinc-400 mb-10 max-w-sm mx-auto">
-          {dict.contact.description}
+          {t("contact", "description")}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -28,7 +29,7 @@ export function Contact() {
             rel="noopener noreferrer"
             className={`${glassClasses} bg-zinc-100 text-zinc-950 hover:bg-white`}
           >
-            {dict.contact.btn_contact}
+            {t("contact", "btn_contact")}
           </a>
           <a
             href="/curriculo.pdf"
@@ -36,7 +37,7 @@ export function Contact() {
             rel="noopener noreferrer"
             className={`${glassClasses} bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-zinc-600`}
           >
-            {dict.contact.btn_cv}
+            {t("contact", "btn_cv")}
           </a>
         </div>
       </motion.div>

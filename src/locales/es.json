@@ -1,0 +1,121 @@
+{
+  "header": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "projects": "Proyectos",
+    "courses": "Cursos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "Gabriel Pimentel",
+    "role": "Desarrollador Front-end | Creando experiencias digitales fluidas y minimalistas.",
+    "btn_projects": "Ver Proyectos",
+    "tooltip_copy": "Copiar correo",
+    "tooltip_copied": "¡Copiado!"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Ingeniero de formación, desarrollador por pasión. Mi trayectoria une el rigor analítico de la ingeniería de datos con la creatividad del desarrollo web.",
+    "p2": "Como cofundador de Apex Dev Studio, me enfoco en transformar problemas complejos en productos digitales de alto rendimiento. Mi bagaje técnico me permite entender todo el ciclo de datos de la aplicación, asegurando que el front-end no sea solo visual, sino eficaz y conectado de manera inteligente al backend.",
+    "skills_primary": "Front-end & UI",
+    "skills_secondary": "Ingeniería & Datos"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "id": 1,
+        "title": "Consultor de TI",
+        "subtitle": "Master MR",
+        "period": "2024 - Presente",
+        "description": "Responsable del ciclo de vida completo de los proyectos de datos, desde el levantamiento de requisitos con el cliente hasta la entrega final. Experiencia directa con procesos ETL, automatización de tareas utilizando Python y bases de datos SQL, mantenimiento de sistemas legados y creación de paneles de control en Power BI y Excel.",
+        "tags": ["Python", "SQL Server", "Power BI", "ETL", "VBA", "SQLite", "SAP"]
+      },
+      {
+        "id": 2,
+        "title": "Cofundador y Desarrollador Web",
+        "subtitle": "Apex Dev Studio",
+        "period": "2026 - Presente",
+        "description": "Conceptualización y desarrollo de soluciones web con enfoque en alto rendimiento, diseño responsivo e interfaces fluidas. Trabajo con tecnologías modernas e integración de procesos de despliegue continuo (CI/CD) a través de Cloudflare, garantizando estabilidad y escalabilidad en las entregas.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "React", "CI/CD", "Diseño Responsivo"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación",
+    "items": [
+      {
+        "id": 1,
+        "title": "Técnico en Mecatrónica",
+        "subtitle": "Colégio Pentágono - Escuela Secundaria Técnica",
+        "period": "Finalizado en 2016",
+        "description": "Integración práctica de mecánica, electrónica y programación. Desarrollo de proyectos integradores, como paneles solares con seguimiento, programación en Arduino y fundamentos de mecanizado y construcción de circuitos electrónicos.",
+        "tags": ["Arduino", "Electrónica", "Automatización", "C", "Dibujo Técnico"]
+      },
+      {
+        "id": 2,
+        "title": "Ingeniería Mecánica",
+        "subtitle": "UNINOVE - Licenciatura",
+        "period": "Finalizado en 2022",
+        "description": "Formación con una sólida base matemática y estadística, abarcando disciplinas de cálculo estructural, aerodinámica y CNC. El curso desarrolló un sólido rigor analítico y capacidad de resolución de problemas complejos.",
+        "tags": ["Estadística", "Matemáticas Aplicadas", "AutoCAD", "CNC", "Aerodinámica"]
+      },
+      {
+        "id": 3,
+        "title": "Análisis y Desarrollo de Sistemas",
+        "subtitle": "FATEC São Caetano do Sul - Grado Tecnológico",
+        "period": "Finalizado en 2025",
+        "description": "Formación profunda en ingeniería de software y desarrollo web. Abarca desde la lógica de algoritmos en C/C++ y Java, hasta inteligencia artificial y arquitectura de sistemas, creando una visión completa del ecosistema de TI.",
+        "tags": ["Desarrollo Web", "Lógica de Programación", "C/C++", "Inteligencia Artificial", "HTML/CSS"]
+      }
+    ]
+  },
+  "courses": {
+    "title": "Cursos",
+    "items": [
+      { "id": 1, "title": "C# COMPLETO: Programación Orientada a Objetos", "institution": "Udemy", "year": 2021, "language": "PT" },
+      { "id": 2, "title": "Desde Cero: HTML y CSS para proyectos web", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 3, "title": "Aprende a programar en C# con Orientación a Objetos", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 4, "title": "Git Completo: De Básico a Avanzado", "institution": "Udemy", "year": 2025, "language": "PT" },
+      { "id": 5, "title": "Python para Automatización", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 6, "title": "Curso de Excel VBA + SAP Gui Scripting", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 7, "title": "Introducción a la Programación en JavaScript", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 8, "title": "Domina Figma de 0 a 100", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 9, "title": "Diseño de Logos: Del Concepto a la Presentación", "institution": "Domestika", "year": 2026, "language": "EN" }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "id": 1,
+        "title": "F1 Dashboard",
+        "description": "Panel interactivo para el seguimiento en vivo de la F1 con telemetría y datos de carreras y campeonatos.",
+        "images": ["/projects/f1-1.webp", "/projects/f1-2.webp", "/projects/f1-3.webp", "/projects/f1-4.webp"],
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "API", "Git", "Dashboard"],
+        "links": {
+          "live": "https://f1dash.pages.dev/",
+          "repo": "https://github.com/GroundWave96/f1-dashboard"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Apex Dev Studio",
+        "description": "Landing page oficial de la agencia Apex Dev Studio, enfocada en soluciones web de alto rendimiento e identidad visual.",
+        "images": ["/projects/apex-1.webp"],
+        "tags": ["Next.js", "Diseño Web", "Branding", "Figma", "Tailwind CSS", "Git", "SEO"],
+        "links": {
+          "live": "https://apexdevstudio.pages.dev/",
+          "repo": ""
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Te gusta lo que ves?",
+    "description": "Siempre estoy abierto a nuevos desafíos y colaboraciones. ¿Hablamos?",
+    "btn_contact": "Entrar en contacto",
+    "btn_cv": "Ver CV"
+  }
+}

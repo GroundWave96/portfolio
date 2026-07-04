@@ -1,0 +1,121 @@
+{
+  "header": {
+    "about": "About Me",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "courses": "Courses",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Gabriel Pimentel",
+    "role": "Front-end Developer | Building fluid and minimalist digital experiences.",
+    "btn_projects": "View Projects",
+    "tooltip_copy": "Copy email",
+    "tooltip_copied": "Copied!"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Engineer by training, developer by passion. My journey combines the analytical rigor of data engineering with the creativity of web development.",
+    "p2": "As co-founder of Apex Dev Studio, I focus on turning complex problems into high-performance digital products. My technical background allows me to understand the entire data cycle of the application, ensuring the Front-end is not just visual, but performant and intelligently connected to the backend.",
+    "skills_primary": "Front-end & UI",
+    "skills_secondary": "Engineering & Data"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "id": 1,
+        "title": "IT Consultant",
+        "subtitle": "Master MR",
+        "period": "2024 - Present",
+        "description": "Responsible for the complete lifecycle of data projects, from gathering requirements with the client to final delivery. Direct hands-on experience with ETL processes, task automation using Python and SQL databases, legacy system maintenance, and the creation of management dashboards in Power BI and Excel.",
+        "tags": ["Python", "SQL Server", "Power BI", "ETL", "VBA", "SQLite", "SAP"]
+      },
+      {
+        "id": 2,
+        "title": "Co-founder & Web Developer",
+        "subtitle": "Apex Dev Studio",
+        "period": "2026 - Present",
+        "description": "Conceptualization and development of web solutions focused on high performance, responsiveness, and fluid interfaces. Working with modern technologies and continuous deployment (CI/CD) integration via Cloudflare, ensuring stability and scalability in deliveries.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "React", "CI/CD", "Responsive Design"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "id": 1,
+        "title": "Mechatronics Technician",
+        "subtitle": "Colégio Pentágono - Technical High School",
+        "period": "Completed in 2016",
+        "description": "Practical integration of mechanics, electronics, and programming. Development of integrative projects, such as solar panels with sun-tracking, Arduino programming, and fundamentals of machining and electronic circuit construction.",
+        "tags": ["Arduino", "Electronics", "Automation", "C", "Technical Drawing"]
+      },
+      {
+        "id": 2,
+        "title": "Mechanical Engineering",
+        "subtitle": "UNINOVE - Bachelor's Degree",
+        "period": "Completed in 2022",
+        "description": "Degree with a strong mathematical and statistical foundation, encompassing disciplines in structural calculation, aerodynamics, and CNC. The course developed solid analytical rigor and complex problem-solving capabilities.",
+        "tags": ["Statistics", "Applied Mathematics", "AutoCAD", "CNC", "Aerodynamics"]
+      },
+      {
+        "id": 3,
+        "title": "Systems Analysis and Development",
+        "subtitle": "FATEC São Caetano do Sul - Associate Degree",
+        "period": "Completed in 2025",
+        "description": "In-depth education in software engineering and web development. Covers everything from algorithm logic in C/C++ and Java to artificial intelligence and systems architecture, creating a comprehensive view of the IT ecosystem.",
+        "tags": ["Web Development", "Programming Logic", "C/C++", "Artificial Intelligence", "HTML/CSS"]
+      }
+    ]
+  },
+  "courses": {
+    "title": "Courses",
+    "items": [
+      { "id": 1, "title": "COMPLETE C#: Object-Oriented Programming", "institution": "Udemy", "year": 2021, "language": "PT" },
+      { "id": 2, "title": "From Scratch: HTML and CSS for Web Projects", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 3, "title": "Learn to Program in C# with Object Orientation", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 4, "title": "Complete Git: From Basic to Advanced", "institution": "Udemy", "year": 2025, "language": "PT" },
+      { "id": 5, "title": "Python for Automation", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 6, "title": "Excel VBA + SAP Gui Scripting Course", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 7, "title": "Introduction to JavaScript Programming", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 8, "title": "Master Figma from 0 to 100", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 9, "title": "Logo Design: From Concept to Presentation", "institution": "Domestika", "year": 2026, "language": "EN" }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "id": 1,
+        "title": "F1 Dashboard",
+        "description": "Interactive dashboard for live F1 tracking with telemetry and data from races and championships.",
+        "images": ["/projects/f1-1.webp", "/projects/f1-2.webp", "/projects/f1-3.webp", "/projects/f1-4.webp"],
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "API", "Git", "Dashboard"],
+        "links": {
+          "live": "https://f1dash.pages.dev/",
+          "repo": "https://github.com/GroundWave96/f1-dashboard"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Apex Dev Studio",
+        "description": "Official landing page for the Apex Dev Studio agency, focused on high-performance web solutions and visual identity.",
+        "images": ["/projects/apex-1.webp"],
+        "tags": ["Next.js", "Web Design", "Branding", "Figma", "Tailwind CSS", "Git", "SEO"],
+        "links": {
+          "live": "https://apexdevstudio.pages.dev/",
+          "repo": ""
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": "Like what you see?",
+    "description": "I'm always open to new challenges and partnerships. Let's talk?",
+    "btn_contact": "Get in touch",
+    "btn_cv": "View CV"
+  }
+}

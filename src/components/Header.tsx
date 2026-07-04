@@ -3,19 +3,20 @@
 import { useState } from "react";
 import { motion, AnimatePresence, Transition } from "framer-motion";
 import { Logo } from "./Logo";
-import { Menu } from "lucide-react";
-import dict from "@/locales/pt.json";
+import { useLanguage } from "@/context/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header({ showLogo = true }: { showLogo?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navLinks = [
-    { name: dict.header.about, href: "#sobre" },
-    { name: dict.header.experience, href: "#experiencia" },
-    { name: dict.header.education, href: "#educacao" },
-    { name: dict.header.courses, href: "#cursos" },
-    { name: dict.header.projects, href: "#projetos" },
-    { name: dict.header.contact, href: "#contato" },
+    { name: t("header", "about"), href: "#sobre" },
+    { name: t("header", "experience"), href: "#experiencia" },
+    { name: t("header", "education"), href: "#educacao" },
+    { name: t("header", "courses"), href: "#cursos" },
+    { name: t("header", "projects"), href: "#projetos" },
+    { name: t("header", "contact"), href: "#contato" },
   ];
 
   const iosSpring: Transition = {
@@ -29,7 +30,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
     <motion.header
       layout
       transition={iosSpring}
-      className="fixed top-6 left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 overflow-hidden rounded-4xl bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_12px_32px_0_rgba(0,0,0,0.4)]"
+      className="fixed top-6 left-1/2 z-50 w-[90%] max-w-4xl -translate-x-1/2 overflow-hidden rounded-4xl bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_12px_32px_0_rgba(0,0,0,0.4)]"
     >
       <div className="flex h-14 items-center justify-between px-6">
         
@@ -43,22 +44,27 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
           )}
         </div>
 
-        <nav className="hidden md:block">
-          <ul className="flex items-center gap-6">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="hidden lg:flex items-center gap-6">
+            <nav>
+                <ul className="flex items-center gap-5">
+                    {navLinks.map((link) => (
+                    <li key={link.name}>
+                        <a
+                        href={link.href}
+                        className="text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100 whitespace-nowrap"
+                        >
+                        {link.name}
+                        </a>
+                    </li>
+                    ))}
+                </ul>
+            </nav>
+            <div className="h-4 w-px bg-white/10" aria-hidden="true" />
+            <LanguageSwitcher />
+        </div>
 
-        <motion.div layout className="md:hidden flex items-center">
+        <motion.div layout className="lg:hidden flex items-center gap-3">
+          <LanguageSwitcher />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="relative flex h-8 w-8 flex-col items-center justify-center gap-1.5 rounded-full hover:bg-white/5 transition-colors focus:outline-none"
@@ -85,7 +91,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={iosSpring}
-            className="md:hidden border-t border-white/5"
+            className="lg:hidden border-t border-white/5"
           >
             <ul className="flex flex-col gap-4 px-6 pb-6 pt-4">
               {navLinks.map((link) => (

@@ -2,7 +2,7 @@
   "header": {
     "about": "Sobre Mim",
     "experience": "Experiência",
-    "education": "Educação",
+    "education": "Formação",
     "projects": "Projetos",
     "courses": "Cursos",
     "contact": "Contato"
@@ -22,13 +22,95 @@
     "skills_secondary": "Engenharia & Dados"
   },
   "experience": {
-    "title": "Experiência"
+    "title": "Experiência",
+    "items": [
+      {
+        "id": 1,
+        "title": "Consultor de TI",
+        "subtitle": "Master MR",
+        "period": "2024 - Presente",
+        "description": "Responsável pelo ciclo de vida completo dos projetos de dados, desde o levantamento de requisitos com o cliente até a entrega final. Atuação direta com processos de ETL, automação de tarefas utilizando Python e bancos de dados SQL, manutenção de sistemas legados e criação de dashboards gerenciais no Power BI e Excel.",
+        "tags": ["Python", "SQL Server", "Power BI", "ETL", "VBA", "SQLite", "SAP"]
+      },
+      {
+        "id": 2,
+        "title": "Co-fundador & Desenvolvedor Web",
+        "subtitle": "Apex Dev Studio",
+        "period": "2026 - Presente",
+        "description": "Idealização e desenvolvimento de soluções web com foco em alta performance, responsividade e interfaces fluidas. Atuação com tecnologias modernas e integração de processos de deploy contínuo (CI/CD) via Cloudflare, garantindo estabilidade e escalabilidade nas entregas.",
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "React", "CI/CD", "Design Responsivo"]
+      }
+    ]
   },
   "education": {
-    "title": "Formação"
+    "title": "Formação",
+    "items": [
+      {
+        "id": 1,
+        "title": "Técnico em Mecatrônica",
+        "subtitle": "Colégio Pentágono - Ensino Médio Técnico",
+        "period": "Concluído em 2016",
+        "description": "Integração prática de mecânica, eletrônica e programação. Desenvolvimento de projetos integradores, como painéis solares com rastreamento, programação em Arduino e fundamentos de usinagem e construção de circuitos eletrônicos.",
+        "tags": ["Arduino", "Eletrônica", "Automação", "C", "Desenho Técnico"]
+      },
+      {
+        "id": 2,
+        "title": "Engenharia Mecânica",
+        "subtitle": "UNINOVE - Bacharelado",
+        "period": "Concluído em 2022",
+        "description": "Formação com forte base matemática e estatística, englobando disciplinas de cálculo estrutural, aerodinâmica e CNC. O curso desenvolveu um sólido rigor analítico e capacidade de resolução de problemas complexos.",
+        "tags": ["Estatística", "Matemática Aplicada", "AutoCAD", "CNC", "Aerodinâmica"]
+      },
+      {
+        "id": 3,
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "subtitle": "FATEC São Caetano do Sul - Tecnólogo",
+        "period": "Concluído em 2025",
+        "description": "Formação aprofundada em engenharia de software e desenvolvimento web. Abrange desde a lógica de algoritmos em C/C++ e Java, até inteligência artificial e arquitetura de sistemas, criando uma visão completa do ecossistema de TI.",
+        "tags": ["Desenvolvimento Web", "Lógica de Programação", "C/C++", "Inteligência Artificial", "HTML/CSS"]
+      }
+    ]
   },
   "courses": {
-    "title": "Cursos"
+    "title": "Cursos",
+    "items": [
+      { "id": 1, "title": "C# COMPLETO: Programação Orientada a Objetos", "institution": "Udemy", "year": 2021, "language": "PT" },
+      { "id": 2, "title": "A partir do zero: HTML e CSS para projetos web", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 3, "title": "Aprenda a programar em C# com Orientação a Objetos", "institution": "Alura", "year": 2023, "language": "PT" },
+      { "id": 4, "title": "Git Completo: Do Básico ao Avançado", "institution": "Udemy", "year": 2025, "language": "PT" },
+      { "id": 5, "title": "Python para Automação", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 6, "title": "Curso de Excel VBA + SAP Gui Scripting", "institution": "Master MR", "year": 2025, "language": "PT" },
+      { "id": 7, "title": "Introdução à Programação com JavaScript", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 8, "title": "Domine o Figma do 0 ao 100", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 9, "title": "Design de Logos: Do Conceito à Apresentação", "institution": "Domestika", "year": 2026, "language": "EN" }
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "items": [
+      {
+        "id": 1,
+        "title": "F1 Dashboard",
+        "description": "Painel interativo para acompanhamento de F1 atualizado com telemetria e dados das corridas e campeonatos.",
+        "images": ["/projects/f1-1.webp", "/projects/f1-2.webp", "/projects/f1-3.webp", "/projects/f1-4.webp"],
+        "tags": ["Next.js", "TypeScript", "Tailwind CSS", "API", "Git", "Dashboard"],
+        "links": {
+          "live": "https://f1dash.pages.dev/",
+          "repo": "https://github.com/GroundWave96/f1-dashboard"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Apex Dev Studio",
+        "description": "Landing page oficial da agência Apex Dev Studio, focada em soluções web de alta performance e identidade visual.",
+        "images": ["/projects/apex-1.webp"],
+        "tags": ["Next.js", "Web Design", "Branding", "Figma", "Tailwind CSS", "Git", "SEO"],
+        "links": {
+          "live": "https://apexdevstudio.pages.dev/",
+          "repo": ""
+        }
+      }
+    ]
   },
   "contact": {
     "title": "Gostou do que viu?",

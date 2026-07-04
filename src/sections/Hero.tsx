@@ -4,10 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "@/components/SocialIcon";
 import { Mail, Check } from "lucide-react";
-import dict from "@/locales/pt.json";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function Hero({ showSplash }: { showSplash: boolean }) {
     const [emailCopied, setEmailCopied] = useState(false);
+    const { t } = useLanguage();
 
     const glassClasses = "flex h-12 items-center justify-center rounded-full bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_8px_16px_0_rgba(0,0,0,0.3)] transition-all hover:bg-zinc-800/50";
 
@@ -23,10 +24,10 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
         <motion.section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20">
             <div className="text-center">
                 <h1 className="mb-6 text-5xl font-medium tracking-tight text-zinc-100 sm:text-7xl">
-                    {dict.hero.name}
+                    {t("hero", "name")}
                 </h1>
                 <p className="mx-auto max-w-xl text-lg text-zinc-400 sm:text-xl">
-                    {dict.hero.role}
+                    {t("hero", "role")}
                 </p>
             </div>
 
@@ -36,7 +37,7 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
                     href="#projetos"
                     className={`${glassClasses} w-full text-sm font-semibold text-zinc-100 hover:scale-105 active:scale-95`}
                 >
-                    {dict.hero.btn_projects}
+                    {t("hero", "btn_projects")}
                 </a>
 
                 <div className="flex w-full items-center justify-between">
@@ -55,7 +56,7 @@ export function Hero({ showSplash }: { showSplash: boolean }) {
                         {emailCopied ? <Check className="h-5 w-5 text-green-400" /> : <Mail className="h-5 w-5" />}
 
                         <span className={`absolute -bottom-12 rounded-lg bg-zinc-800 px-3 py-1.5 text-xs text-white shadow-lg transition-all whitespace-nowrap pointer-events-none ${emailCopied ? "opacity-100 scale-100" : "opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"}`}>
-                            {emailCopied ? dict.hero.tooltip_copied : dict.hero.tooltip_copy}
+                            {emailCopied ? t("hero", "tooltip_copied") : t("hero", "tooltip_copy")}
                         </span>
                     </button>
                 </div>
