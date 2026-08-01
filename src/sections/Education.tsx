@@ -8,7 +8,7 @@ export function Education() {
   const educationItems = languages[lang].education.items;
 
   return (
-    <section id="educacao" className="py-12 px-6">
+    <section id="educacao" className="scroll-mt-28 py-24 px-6">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-3xl font-medium text-zinc-100 mb-12">
           {t("education", "title")}

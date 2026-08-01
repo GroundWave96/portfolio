@@ -8,7 +8,7 @@ export function Experience() {
   const experienceItems = languages[lang].experience.items;
 
   return (
-    <section id="experiencia" className="py-24 px-6">
+    <section id="experiencia" className="scroll-mt-28 py-24 px-6">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-3xl font-medium text-zinc-100 mb-12">
           {t("experience", "title")}

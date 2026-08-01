@@ -33,7 +33,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
       className="fixed top-6 left-1/2 z-50 w-[90%] max-w-4xl -translate-x-1/2 overflow-hidden rounded-4xl bg-zinc-900/40 backdrop-blur-md shadow-[inset_0.5px_0.5px_0px_rgba(255,255,255,0.2),inset_-0.5px_-0.5px_0px_rgba(255,255,255,0.04),0_12px_32px_0_rgba(0,0,0,0.4)]"
     >
       <div className="flex h-14 items-center justify-between px-6">
-        
+
         <div className="shrink-0 flex items-center min-w-12.5">
           {showLogo && (
             <motion.div layoutId="logo-container" className="flex items-center">
@@ -45,22 +45,22 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
         </div>
 
         <div className="hidden lg:flex items-center gap-6">
-            <nav>
-                <ul className="flex items-center gap-5">
-                    {navLinks.map((link) => (
-                    <li key={link.name}>
-                        <a
-                        href={link.href}
-                        className="text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100 whitespace-nowrap"
-                        >
-                        {link.name}
-                        </a>
-                    </li>
-                    ))}
-                </ul>
-            </nav>
-            <div className="h-4 w-px bg-white/10" aria-hidden="true" />
-            <LanguageSwitcher />
+          <nav>
+            <ul className="flex items-center gap-5">
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100 whitespace-nowrap"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="h-4 w-px bg-white/10" aria-hidden="true" />
+          <LanguageSwitcher />
         </div>
 
         <motion.div layout className="lg:hidden flex items-center gap-3">
@@ -95,7 +95,7 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
           >
             <ul className="flex flex-col gap-4 px-6 pb-6 pt-4">
               {navLinks.map((link) => (
-                <motion.li 
+                <motion.li
                   key={link.name}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -103,7 +103,19 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
                 >
                   <a
                     href={link.href}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsOpen(false);
+
+                      setTimeout(() => {
+                        const targetId = link.href.replace('#', '');
+                        const element = document.getElementById(targetId);
+
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }, 150);
+                    }}
                     className="block text-[17px] font-normal tracking-tight text-zinc-300 transition-colors hover:text-white"
                   >
                     {link.name}
