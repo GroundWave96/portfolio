@@ -8,7 +8,7 @@ export function Projects() {
   const projectItems = languages[lang].projects.items;
 
   return (
-    <section id="projetos" className="scroll-mt-28 py-24 px-6">
+    <section id="projetos" className="py-24 px-6">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-3xl font-medium text-zinc-100 mb-12">
           {t("projects", "title")}

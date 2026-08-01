@@ -8,7 +8,7 @@ export function About() {
     const { t } = useLanguage();
 
     return (
-        <section id="sobre" className="scroll-mt-28 py-24 px-6">
+        <section id="sobre" className="py-24 px-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
