@@ -112,7 +112,15 @@ export function Header({ showLogo = true }: { showLogo?: boolean }) {
                         const element = document.getElementById(targetId);
 
                         if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
+                          const offset = 0;
+
+                          const elementPosition = element.getBoundingClientRect().top;
+                          const offsetPosition = elementPosition + window.scrollY - offset;
+
+                          window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                          });
                         }
                       }, 150);
                     }}
