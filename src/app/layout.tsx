@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Gabriel Pimentel | Desenvolvedor Front-end",
+    title: "Gabriel Pimentel | Desenvolvedor",
     description: "Criando experiências digitais fluidas e de alta performance.",
     url: "https://gabrielpimentel.pages.dev/",
     siteName: "Gabriel Pimentel Portfolio",
