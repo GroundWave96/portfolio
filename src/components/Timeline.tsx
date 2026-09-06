@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 export interface TimelineItemProps {
   id: number;
   title: string;
@@ -12,8 +15,15 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
 
   return (
     <div className="relative border-l border-zinc-800 ml-3 md:ml-4 space-y-12">
-      {sortedItems.map((item) => (
-        <div key={item.id} className="relative pl-8 md:pl-12">
+      {sortedItems.map((item, index) => (
+        <motion.div 
+          key={item.id} 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.15 }}
+          viewport={{ once: false, margin: "-50px" }}
+          className="relative pl-8 md:pl-12"
+        >
           <div className="absolute -left-1.25 top-1.5 h-2.5 w-2.5 rounded-full bg-zinc-400 ring-4 ring-zinc-950" />
           
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
@@ -40,7 +50,7 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
               ))}
             </div>
           )}
-        </div>
+        </motion.div>
       ))}
     </div>
   );
