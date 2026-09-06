@@ -9,7 +9,7 @@
   },
   "hero": {
     "name": "Gabriel Pimentel",
-    "role": "Desenvolvedor | Criando experiências digitais fluidas e minimalistas.",
+    "role": "Desenvolvedor | Conectando dados, tecnologia e design para resolver problemas reais.",
     "btn_projects": "Ver Projetos",
     "tooltip_copy": "Copiar e-mail",
     "tooltip_copied": "Copiado!"
@@ -26,19 +26,35 @@
     "items": [
       {
         "id": 1,
-        "title": "Consultor de TI",
-        "subtitle": "Master MR",
-        "period": "2024 - Presente",
-        "description": "Responsável pelo ciclo de vida completo dos projetos de dados, desde o levantamento de requisitos com o cliente até a entrega final. Atuação direta com processos de ETL, automação de tarefas utilizando Python e bancos de dados SQL, manutenção de sistemas legados e criação de dashboards gerenciais no Power BI e Excel.",
-        "tags": ["Python", "SQL Server", "Power BI", "ETL", "VBA", "SQLite", "SAP"]
+        "title": "Estagiário de TI",
+        "subtitle": "Master MR Tecnologia",
+        "period": "Nov 2024 - Mai 2025",
+        "description": "Suporte ativo no desenvolvimento de soluções de Business Intelligence e automação de processos corporativos. Auxílio na construção de painéis no Power BI, desenvolvimento de scripts iniciais em Python e rotinas em VBA, manutenção de bancos de dados SQL e aplicação prática de conceitos de ETL e integrações no ambiente SAP.",
+        "tags": ["Power BI", "Python", "VBA", "SQL", "ETL", "GitHub", "SAP GUI"]
       },
       {
         "id": 2,
+        "title": "Consultor de TI",
+        "subtitle": "Master MR Tecnologia",
+        "period": "Mai 2025 - Ago 2026",
+        "description": "Liderança técnica no desenvolvimento de soluções de dados e automação de processos. Desenvolvimento de ferramentas de extração e automação de data entry integradas ao SAP GUI via Python. Criação de dashboards executivos em Power BI com modelagem robusta em DAX, estruturação de bancos de dados SQL Server e automação de processos legados com VBA e Excel.",
+        "tags": ["Python", "SAP GUI", "Power BI", "DAX", "SQL Server", "Power Automate", "VBA"]
+      },
+      {
+        "id": 3,
         "title": "Co-fundador & Desenvolvedor Web",
         "subtitle": "Apex Dev Studio",
-        "period": "2026 - Presente",
+        "period": "Abr 2026 - Presente",
         "description": "Idealização e desenvolvimento de soluções web com foco em alta performance, responsividade e interfaces fluidas. Atuação com tecnologias modernas e integração de processos de deploy contínuo (CI/CD) via Cloudflare, garantindo estabilidade e escalabilidade nas entregas.",
         "tags": ["Next.js", "TypeScript", "Tailwind CSS", "React", "CI/CD", "Design Responsivo"]
+      },
+      {
+        "id": 4,
+        "title": "Analista de Projetos",
+        "subtitle": "Timenow (Alocado na Braskem)",
+        "period": "Set 2026 - Presente",
+        "description": "Atuação direta na planta da Braskem com desenvolvimento de soluções tecnológicas e análise de dados para otimização da operação industrial. Construção de scripts em Python para extração de dados no ecossistema SAP, criação de aplicativos com Power Apps/SharePoint e desenvolvimento de dashboards interativos no Power BI para suporte à tomada de decisão.",
+        "tags": ["Python", "SAP", "Power Apps", "SharePoint", "Power BI", "Microsoft Power Platform"]
       }
     ]
   },
@@ -82,7 +98,8 @@
       { "id": 6, "title": "Curso de Excel VBA + SAP Gui Scripting", "institution": "Master MR", "year": 2025, "language": "PT" },
       { "id": 7, "title": "Introdução à Programação com JavaScript", "institution": "Domestika", "year": 2026, "language": "EN" },
       { "id": 8, "title": "Domine o Figma do 0 ao 100", "institution": "Domestika", "year": 2026, "language": "EN" },
-      { "id": 9, "title": "Design de Logos: Do Conceito à Apresentação", "institution": "Domestika", "year": 2026, "language": "EN" }
+      { "id": 9, "title": "Design de Logos: Do Conceito à Apresentação", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 10, "title": "Microsoft Power BI Para Business Intelligence e Data Science", "institution": "Data Science Academy", "year": 2026, "language": "PT" }
     ]
   },
   "projects": {

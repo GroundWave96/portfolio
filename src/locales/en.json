@@ -9,7 +9,7 @@
   },
   "hero": {
     "name": "Gabriel Pimentel",
-    "role": "Developer | Building fluid and minimalist digital experiences.",
+    "role": "Developer | Connecting data, technology, and design to solve real problems.",
     "btn_projects": "View Projects",
     "tooltip_copy": "Copy email",
     "tooltip_copied": "Copied!"
@@ -26,19 +26,35 @@
     "items": [
       {
         "id": 1,
-        "title": "IT Consultant",
-        "subtitle": "Master MR",
-        "period": "2024 - Present",
-        "description": "Responsible for the complete lifecycle of data projects, from gathering requirements with the client to final delivery. Direct hands-on experience with ETL processes, task automation using Python and SQL databases, legacy system maintenance, and the creation of management dashboards in Power BI and Excel.",
-        "tags": ["Python", "SQL Server", "Power BI", "ETL", "VBA", "SQLite", "SAP"]
+        "title": "IT Intern",
+        "subtitle": "Master MR Tecnologia",
+        "period": "Nov 2024 - May 2025",
+        "description": "Active support in developing Business Intelligence solutions and corporate process automation. Assisted in building dashboards in Power BI, developing initial Python scripts and VBA routines, maintaining SQL databases, and practical application of ETL concepts and integrations in the SAP environment.",
+        "tags": ["Power BI", "Python", "VBA", "SQL", "ETL", "GitHub", "SAP GUI"]
       },
       {
         "id": 2,
+        "title": "IT Consultant",
+        "subtitle": "Master MR Tecnologia",
+        "period": "May 2025 - Aug 2026",
+        "description": "Technical leadership in developing data solutions and process automation. Development of extraction and automated data entry tools integrated into SAP GUI via Python. Creation of executive dashboards in Power BI with robust DAX modeling, structuring SQL Server databases, and automating legacy processes with VBA and Excel.",
+        "tags": ["Python", "SAP GUI", "Power BI", "DAX", "SQL Server", "Power Automate", "VBA"]
+      },
+      {
+        "id": 3,
         "title": "Co-founder & Web Developer",
         "subtitle": "Apex Dev Studio",
-        "period": "2026 - Present",
+        "period": "Apr 2026 - Present",
         "description": "Conceptualization and development of web solutions focused on high performance, responsiveness, and fluid interfaces. Working with modern technologies and continuous deployment (CI/CD) integration via Cloudflare, ensuring stability and scalability in deliveries.",
         "tags": ["Next.js", "TypeScript", "Tailwind CSS", "React", "CI/CD", "Responsive Design"]
+      },
+      {
+        "id": 4,
+        "title": "Project Analyst",
+        "subtitle": "Timenow (Allocated at Braskem)",
+        "period": "Sep 2026 - Present",
+        "description": "Direct operations at the Braskem plant developing technological solutions and data analysis to optimize industrial operations. Built Python scripts for data extraction in the SAP ecosystem, created apps with Power Apps/SharePoint, and developed interactive dashboards in Power BI to support decision-making.",
+        "tags": ["Python", "SAP", "Power Apps", "SharePoint", "Power BI", "Microsoft Power Platform"]
       }
     ]
   },
@@ -82,7 +98,8 @@
       { "id": 6, "title": "Excel VBA + SAP Gui Scripting Course", "institution": "Master MR", "year": 2025, "language": "PT" },
       { "id": 7, "title": "Introduction to JavaScript Programming", "institution": "Domestika", "year": 2026, "language": "EN" },
       { "id": 8, "title": "Master Figma from 0 to 100", "institution": "Domestika", "year": 2026, "language": "EN" },
-      { "id": 9, "title": "Logo Design: From Concept to Presentation", "institution": "Domestika", "year": 2026, "language": "EN" }
+      { "id": 9, "title": "Logo Design: From Concept to Presentation", "institution": "Domestika", "year": 2026, "language": "EN" },
+      { "id": 10, "title": "Microsoft Power BI for Business Intelligence and Data Science", "institution": "Data Science Academy", "year": 2026, "language": "PT" }
     ]
   },
   "projects": {
