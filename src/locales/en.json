@@ -16,10 +16,10 @@
   },
   "about": {
     "title": "About Me",
-    "p1": "Engineer by training, developer by passion. My journey combines the analytical rigor of data engineering with the creativity of web development.",
-    "p2": "As co-founder of Apex Dev Studio, I focus on turning complex problems into high-performance digital products. My technical background allows me to understand the entire data cycle of the application, ensuring the Front-end is not just visual, but performant and intelligently connected to the backend.",
-    "skills_primary": "Front-end & UI",
-    "skills_secondary": "Engineering & Data"
+    "p1": "I transform complex data into strategic decisions and develop applications that automate corporate routines. With a solid foundation in Mechanical Engineering and Systems Analysis, I work at the intersection of Business Intelligence, Data Engineering, and Web Development.",
+    "p2": "My journey has combined a constant search for efficiency with a passion for technology. Today, I build end-to-end solutions: from extracting and processing data in industrial and corporate ecosystems using Python and SQL, to creating dynamic Power BI dashboards and developing modern digital products.",
+    "skills_primary": "Engineering & Data",
+    "skills_secondary": "Development & Web"
   },
   "experience": {
     "title": "Experience",

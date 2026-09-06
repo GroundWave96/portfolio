@@ -16,10 +16,10 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "p1": "Engenheiro de formação e desenvolvedor por paixão. Minha trajetória une o rigor analítico da engenharia de dados com a criatividade do desenvolvimento web.",
-    "p2": "Como co-fundador da Apex Dev Studio, foco em transformar problemas complexos em produtos digitais de alta performance. Minha bagagem técnica me permite entender todo o ciclo de dados da aplicação, garantindo que o Front-end não seja apenas visual, mas performático e conectado de forma inteligente ao backend.",
-    "skills_primary": "Front-end & UI",
-    "skills_secondary": "Engenharia & Dados"
+    "p1": "Transformo dados complexos em decisões estratégicas e desenvolvo aplicações que automatizam rotinas corporativas. Com uma base sólida em Engenharia Mecânica e Análise de Sistemas, atuo na intersecção entre Business Intelligence, Engenharia de Dados e Desenvolvimento Web.",
+    "p2": "Minha trajetória uniu a busca constante por eficiência com a paixão por tecnologia. Hoje, atuo construindo soluções de ponta a ponta: desde a extração e tratamento de dados em ecossistemas industriais e corporativos usando Python e SQL, até a criação de dashboards dinâmicos no Power BI e o desenvolvimento de produtos digitais modernos.",
+    "skills_primary": "Engenharia & Dados",
+    "skills_secondary": "Desenvolvimento & Web"
   },
   "experience": {
     "title": "Experiência",

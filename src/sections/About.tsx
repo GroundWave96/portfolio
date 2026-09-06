@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function About() {
-    const primarySkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "GSAP"];
-    const secondarySkills = ["SQL", "CI/CD", "C#", "Python", "VBA"];
+    const primarySkills = ["Python", "SQL", "Power BI", "VBA", "CI/CD"];
+    const secondarySkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "GSAP", "C#"];
     const { t } = useLanguage();
 
     return (
