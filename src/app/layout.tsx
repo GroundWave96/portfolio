@@ -13,18 +13,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gabrielpimentel.pages.dev/"),
-
-  title: "Gabriel Pimentel | Desenvolvedor Front-end",
-  description: "Engenheiro de formação e desenvolvedor por paixão. Criando experiências digitais fluidas, minimalistas e de alta performance.",
-
+  title: "Gabriel Pimentel | Desenvolvedor",
+  description: "Engenheiro de formação e desenvolvedor por paixão. Conectando dados, tecnologia e design para resolver problemas reais.",
   icons: {
     icon: "/icon.png",
     apple: "/apple-icon.png",
   },
-
   openGraph: {
     title: "Gabriel Pimentel | Desenvolvedor",
-    description: "Criando experiências digitais fluidas e de alta performance.",
+    description: "Engenheiro de formação e desenvolvedor por paixão. Conectando dados, tecnologia e design para resolver problemas reais.",
     url: "https://gabrielpimentel.pages.dev/",
     siteName: "Gabriel Pimentel Portfolio",
     locale: "pt_BR",
@@ -38,14 +35,12 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Gabriel Pimentel | Desenvolvedor Front-end",
-    description: "Engenheiro de formação e desenvolvedor por paixão. Criando experiências digitais fluidas, minimalistas e de alta performance.",
+    title: "Gabriel Pimentel | Desenvolvedor",
+    description: "Engenheiro de formação e desenvolvedor por paixão. Conectando dados, tecnologia e design para resolver problemas reais.",
     images: ["/opengraph-image.png"],
   },
-  
   robots: {
     index: true,
     follow: true,
@@ -58,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans bg-zinc-950 text-zinc-50 antialiased selection:bg-zinc-700 selection:text-white">
         <LanguageProvider>
           <Background />
-          <ScrollToTop /> 
+          <ScrollToTop />
           {children}
         </LanguageProvider>
       </body>
