@@ -24,7 +24,19 @@ export function Timeline({ items }: { items: TimelineItemProps[] }) {
           viewport={{ once: false, margin: "-50px" }}
           className="relative pl-8 md:pl-12"
         >
-          <div className="absolute -left-1.25 top-1.5 h-2.5 w-2.5 rounded-full bg-zinc-400 ring-4 ring-zinc-950" />
+          <motion.div 
+            animate={{ 
+              scale: [1, 1.2, 1],
+              opacity: [0.7, 1, 0.7]
+            }}
+            transition={{ 
+              duration: 3, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: index * 0.4
+            }}
+            className="absolute -left-1.25 top-1.5 h-2.5 w-2.5 rounded-full bg-zinc-400 ring-4 ring-zinc-950" 
+          />
           
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
             <h3 className="text-xl font-semibold text-zinc-100">{item.title}</h3>
