@@ -1,35 +1,28 @@
-"use client";
-import { useState } from "react";
 import { Header } from "@/components/Header";
 import { SplashScreen } from "@/components/SplashScreen";
+import { CommandPalette } from "@/components/CommandPalette";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/sections/Hero";
-import { About } from "@/sections/About";
 import { Projects } from "@/sections/Projects";
 import { Experience } from "@/sections/Experience";
+import { About } from "@/sections/About";
 import { Education } from "@/sections/Education";
-import { Courses } from "@/sections/Courses";
 import { Contact } from "@/sections/Contact";
-import { Footer } from "@/components/Footer"; // <-- Adicione a importação
 
 export default function Home() {
-  const [showSplash, setShowSplash] = useState(true);
-
   return (
     <>
-      <SplashScreen finishLoading={() => setShowSplash(false)} />
-      <Header showLogo={!showSplash} />
-      
+      <SplashScreen />
+      <Header />
+      <CommandPalette />
       <main>
-        <Hero showSplash={showSplash} />
-        <About />
-        <Experience />
-        <Education />
-        <Courses />
+        <Hero />
         <Projects />
+        <Experience />
+        <About />
+        <Education />
         <Contact />
       </main>
-      
-      {/* <-- Adicione aqui no final --> */}
       <Footer />
     </>
   );

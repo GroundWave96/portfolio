@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "title": "Gabriel Pimentel | Dados, Automação e Web",
+    "description": "Analista de Projetos na Timenow (Braskem). Python, SQL, Power BI, Power Platform e desenvolvimento web com Next.js. Engenheiro Mecânico e tecnólogo em ADS."
+  },
+  "months": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
+  "nav": {
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "about": "Sobre",
+    "education": "Formação",
+    "contact": "Contato",
+    "home": "Início",
+    "open_menu": "Abrir menu",
+    "close_menu": "Fechar menu",
+    "search": "Busca rápida",
+    "language": "Idioma"
+  },
+  "hero": {
+    "status": "Atualmente",
+    "status_role": "Analista de Projetos",
+    "status_at": "Timenow · Braskem",
+    "name": "Gabriel Pimentel",
+    "tagline": "Dados, automação e desenvolvimento web para resolver problemas reais.",
+    "focus": "Dados + Web",
+    "languages": "PT · EN",
+    "cta_projects": "Ver projetos",
+    "cta_cv": "Currículo",
+    "scroll": "Role para ver mais"
+  },
+  "actions": {
+    "copy_email": "Copiar e-mail",
+    "email_copied": "E-mail copiado",
+    "copy_failed": "Não deu para copiar. O e-mail é",
+    "whatsapp_message": "Olá, Gabriel! Visitei seu portfólio e gostaria de conversar.",
+    "open_site": "Ver site",
+    "open_repo": "Código",
+    "details": "Detalhes",
+    "close": "Fechar",
+    "prev_image": "Imagem anterior",
+    "next_image": "Próxima imagem",
+    "go_to_image": "Ir para a imagem"
+  },
+  "projects": {
+    "eyebrow": "Trabalho selecionado",
+    "title": "Projetos",
+    "subtitle": "Produtos que criei do zero e sites que entreguei para clientes.",
+    "own": "Projetos próprios",
+    "client": "Para clientes",
+    "in_progress": "Em desenvolvimento",
+    "labels": {
+      "challenge": "O desafio",
+      "highlights": "O que construí",
+      "stack": "Stack",
+      "context": "Contexto",
+      "year": "Ano"
+    },
+    "items": {
+      "f1": {
+        "title": "F1 Dashboard",
+        "summary": "Um app no navegador para acompanhar a temporada de Fórmula 1: próxima corrida, sessão ao vivo, campeonato, calendário e resultados.",
+        "context": "Projeto pessoal",
+        "challenge": "Reunir dados de várias fontes da F1 num painel rápido, bonito em qualquer tela e que se atualize sozinho, sem servidor para manter.",
+        "highlights": [
+          "Dados da Jolpica e do OpenF1 guardados num banco Cloudflare D1, atualizado a cada 10 minutos por um Worker agendado.",
+          "Contagem regressiva para a próxima sessão, com estado ao vivo e programação completa do fim de semana.",
+          "Traçado do circuito em SVG que se desenha, previsão do tempo e histórico de vencedores.",
+          "Instalável como app (PWA), em português e inglês, navegável só pelo teclado."
+        ],
+        "alts": [
+          "Próxima corrida com contagem regressiva e traçado do circuito",
+          "Classificação do campeonato de pilotos",
+          "Calendário da temporada em grade",
+          "Resultados da corrida com tempos e voltas",
+          "Sessão com pódio e melhores voltas"
+        ]
+      },
+      "cuboguia": {
+        "title": "CuboGuia",
+        "summary": "Você informa como o seu cubo mágico está, pintando no modelo 3D ou pela câmera, e recebe um tutorial animado, passo a passo.",
+        "context": "Projeto pessoal",
+        "challenge": "Ensinar a resolver vários puzzles a partir do estado real do cubo de cada pessoa, e não de um cubo genérico.",
+        "highlights": [
+          "Modelos 3D em Three.js para 2x2, 3x3, Pyraminx e Megaminx, com animação de cada giro.",
+          "Leitura das cores pela câmera do celular ou pintura direto no modelo.",
+          "Solucionadores próprios: método de iniciante e CFOP no 3x3, solução ótima no 2x2 e no Pyraminx.",
+          "Testes automatizados do solucionador e da leitura de cores com Vitest."
+        ],
+        "alts": [
+          "Página inicial do CuboGuia com o cubo em 3D",
+          "Pintura das cores do cubo no modelo 3D"
+        ]
+      },
+      "ortiz": {
+        "title": "Ortiz Engenharia",
+        "summary": "Site institucional de uma empresa de projetos de engenharia para os setores farmacêutico e de life sciences.",
+        "context": "Pela Apex Dev Studio, em parceria com Vitor",
+        "challenge": "Apresentar serviços técnicos complexos de forma clara e passar credibilidade para clientes industriais.",
+        "highlights": [
+          "Levantamento de requisitos direto com o cliente.",
+          "Identidade visual e protótipo no Figma antes do código.",
+          "Interface fluida, responsiva e com foco em navegação e performance.",
+          "SEO técnico para aparecer nas buscas do setor."
+        ],
+        "alts": [
+          "Página inicial do site da Ortiz Engenharia",
+          "Seção de apresentação da Ortiz Engenharia"
+        ]
+      },
+      "apex": {
+        "title": "Apex Dev Studio",
+        "summary": "Novo site do meu estúdio de desenvolvimento web, focado em sites de alta performance e estratégias de SEO e GEO.",
+        "context": "Estúdio próprio, em parceria com Vitor",
+        "challenge": "Mostrar o que o estúdio entrega usando o próprio site como prova: rápido, bem ranqueado e com identidade forte.",
+        "highlights": [
+          "Site multilíngue com Next.js publicado na Cloudflare.",
+          "Metas de Core Web Vitals definidas desde o início.",
+          "Identidade visual e animações próprias.",
+          "Ainda em desenvolvimento: a versão final está a caminho."
+        ],
+        "alts": [
+          "Página inicial da Apex Dev Studio",
+          "Seção de serviços da Apex Dev Studio"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Trajetória",
+    "title": "Experiência",
+    "current": "Atual",
+    "present": "hoje",
+    "show_more": "Ver detalhes",
+    "show_less": "Ocultar detalhes",
+    "promotion": "Promovido",
+    "companies": {
+      "timenow": { "note": "Alocado na Braskem" },
+      "apex": { "note": "Co-fundador" },
+      "mastermr": { "note": "1 ano e 10 meses" }
+    },
+    "roles": {
+      "timenow-analyst": {
+        "title": "Analista de Projetos",
+        "summary": "Soluções de tecnologia e análise de dados direto na planta da Braskem, para otimizar rotinas de vários setores da operação industrial.",
+        "bullets": [
+          "Scripts em Python para extrair e processar dados do ecossistema SAP.",
+          "Aplicativos corporativos com Power Apps e SharePoint.",
+          "Dashboards no Power BI para acompanhar indicadores e apoiar decisões.",
+          "Levantamento de necessidades das áreas para entregar ferramentas que reduzem o trabalho manual."
+        ]
+      },
+      "apex-founder": {
+        "title": "Co-fundador & Desenvolvedor Front-end",
+        "summary": "Desenvolvimento de sites para clientes de ponta a ponta, do protótipo no Figma ao deploy.",
+        "bullets": [
+          "Sites com Next.js, React e Vite, integrados a APIs REST de terceiros.",
+          "Prototipação e UI/UX no Figma junto com o cliente.",
+          "Animações fluidas para melhorar a experiência de uso.",
+          "Performance e SEO técnico para ranquear bem e carregar rápido, com deploy contínuo na Cloudflare."
+        ]
+      },
+      "mastermr-consultant": {
+        "title": "Consultor de TI",
+        "summary": "Liderança técnica em soluções de dados e automação para clientes de grande porte.",
+        "bullets": [
+          "Ferramentas de extração de dados e relatórios integradas ao SAP, como a plataforma POVR.",
+          "Automação de entrada de dados e geração de notas com Python e SAP GUI Scripting.",
+          "Dashboards executivos em Power BI com modelagem em DAX e data-marts.",
+          "Bancos SQL Server (DDL, DML, procedures e triggers) para apps em Power Apps e Power Automate.",
+          "Automação de processos legados com VBA, Power Query e Power Pivot."
+        ]
+      },
+      "mastermr-intern": {
+        "title": "Estagiário de TI",
+        "summary": "Início na Master MR, apoiando soluções de Business Intelligence e as primeiras automações.",
+        "bullets": [
+          "Painéis no Power BI e métricas para acompanhar indicadores.",
+          "Scripts em Python e rotinas em VBA para automatizar relatórios.",
+          "Manutenção de bancos SQL e versionamento com GitHub.",
+          "Conceitos de ETL e primeiras automações no SAP GUI."
+        ]
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Quem sou",
+    "title": "Sobre mim",
+    "p1": "Transformo dados complexos em decisões e desenvolvo aplicações que automatizam rotinas corporativas. Com base em Engenharia Mecânica e Análise de Sistemas, trabalho na interseção entre Business Intelligence, engenharia de dados e desenvolvimento web.",
+    "p2": "Construo soluções de ponta a ponta: da extração de dados do SAP com Python à modelagem e visualização no Power BI. Fora do mundo dos dados, crio produtos web do zero, unindo design de interface e arquitetura de software. Gosto de entregar ferramentas que tiram trabalho manual das pessoas.",
+    "facts": {
+      "based": "Base",
+      "based_value": "Santo André, SP",
+      "background": "Formação",
+      "background_value": "Eng. Mecânica + ADS",
+      "languages": "Idiomas",
+      "languages_value": "Português nativo · Inglês profissional"
+    },
+    "skills": {
+      "data": "Dados & BI",
+      "platform": "Power Platform & SAP",
+      "web": "Web & Produto",
+      "tools": "Ferramentas e métodos"
+    }
+  },
+  "education": {
+    "eyebrow": "Estudos",
+    "title": "Formação",
+    "tab_degrees": "Formação",
+    "tab_courses": "Cursos",
+    "items": {
+      "fatec": {
+        "title": "Análise e Desenvolvimento de Sistemas",
+        "school": "FATEC São Caetano do Sul · Tecnólogo",
+        "description": "Engenharia de software e desenvolvimento web, de algoritmos em C/C++ e Java a inteligência artificial e arquitetura de sistemas.",
+        "tags": ["C/C++", "Java", "Web", "Inteligência Artificial", "Banco de dados"]
+      },
+      "uninove": {
+        "title": "Engenharia Mecânica",
+        "school": "UNINOVE · Bacharelado",
+        "description": "Base forte em matemática e estatística, com cálculo estrutural, aerodinâmica e CNC. Daqui vem o rigor analítico que levo para os dados.",
+        "tags": ["Estatística", "Matemática aplicada", "AutoCAD", "CNC"]
+      },
+      "pentagono": {
+        "title": "Técnico em Mecatrônica",
+        "school": "Colégio Pentágono · Ensino Médio Técnico",
+        "description": "Mecânica, eletrônica e programação na prática, com projetos como painéis solares com rastreamento e Arduino.",
+        "tags": ["Arduino", "Eletrônica", "Automação", "C"]
+      }
+    }
+  },
+  "courses": {
+    "items": {
+      "powerbi": "Microsoft Power BI para Business Intelligence e Data Science",
+      "javascript": "Introdução à Programação com JavaScript",
+      "figma": "Domine o Figma do 0 ao 100",
+      "logo": "Design de Logos: do Conceito à Apresentação",
+      "git": "Git Completo: do Básico ao Avançado",
+      "python": "Python para Automação",
+      "vba-sap": "Excel VBA + SAP GUI Scripting",
+      "html-css": "A partir do zero: HTML e CSS para projetos web",
+      "csharp-alura": "Aprenda a programar em C# com Orientação a Objetos",
+      "csharp-udemy": "C# Completo: Programação Orientada a Objetos"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos conversar?",
+    "description": "Estou aberto a novos desafios, projetos e parcerias. O jeito mais rápido de falar comigo é pelo WhatsApp ou e-mail.",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cv": "Currículo",
+    "cv_hint": "PDF atualizado",
+    "copy_hint": "Clique para copiar"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "built": "Feito com Next.js, Tailwind CSS e Framer Motion.",
+    "back_to_top": "Voltar ao topo"
+  },
+  "cmdk": {
+    "placeholder": "Busque uma seção, projeto ou ação…",
+    "empty": "Nada encontrado.",
+    "sections": "Seções",
+    "projects": "Projetos",
+    "actions": "Ações",
+    "language": "Idioma",
+    "open_cv": "Abrir currículo",
+    "open_whatsapp": "Conversar no WhatsApp",
+    "open_linkedin": "Abrir LinkedIn",
+    "open_github": "Abrir GitHub",
+    "navigate": "navegar",
+    "select": "abrir",
+    "close": "fechar"
+  }
+}

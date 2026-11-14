@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface LogoProps extends React.SVGProps<SVGSVGElement> {}
+type LogoProps = React.SVGProps<SVGSVGElement>;
 
 export function Logo({ className, ...props }: LogoProps) {
   return (
@@ -8,6 +8,7 @@ export function Logo({ className, ...props }: LogoProps) {
       version="1.1" 
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 2180 833" 
+      aria-hidden="true"
       className={className}
       {...props}
     >

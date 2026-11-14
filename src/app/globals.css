@@ -1,5 +1,114 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
 html {
   scroll-behavior: smooth;
+  /* Anchors land below the floating header. */
+  scroll-padding-top: 6rem;
+  color-scheme: dark;
+  background: #09090b;
+}
+
+/* Frosted glass used by the header, buttons and toasts. */
+@utility glass {
+  background-color: rgb(24 24 27 / 0.45);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow:
+    inset 0.5px 0.5px 0 rgb(255 255 255 / 0.2),
+    inset -0.5px -0.5px 0 rgb(255 255 255 / 0.04),
+    0 12px 32px 0 rgb(0 0 0 / 0.4);
+}
+
+/* Small uppercase label above section titles and dates. */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-zinc-500);
+}
+
+@utility tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border: 1px solid var(--color-zinc-800);
+  background-color: rgb(24 24 27 / 0.8);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--color-zinc-300);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-zinc-300);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* --- Splash (first visit of the session) --------------------------------- */
+.splash {
+  display: none;
+}
+html[data-splash] .splash {
+  display: flex;
+}
+html[data-splash] body {
+  overflow: hidden;
+}
+
+/* Non-Portuguese visitors: hide text until the right language is applied. */
+html[data-i18n-pending] main,
+html[data-i18n-pending] header,
+html[data-i18n-pending] footer {
+  opacity: 0;
+}
+
+/* Language switch crossfade. */
+main,
+footer,
+[data-i18n-fade] {
+  transition: opacity 160ms ease;
+}
+html.i18n-swap main,
+html.i18n-swap footer,
+html.i18n-swap [data-i18n-fade] {
+  opacity: 0;
+}
+
+/* --- Background aurora --------------------------------------------------- */
+@keyframes drift-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(6vw, 4vh, 0) scale(1.08); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1.05); }
+  50% { transform: translate3d(-5vw, 6vh, 0) scale(0.95); }
+}
+@keyframes drift-c {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(4vw, -5vh, 0); }
+}
+.aurora-a { animation: drift-a 32s ease-in-out infinite; }
+.aurora-b { animation: drift-b 38s ease-in-out infinite; }
+.aurora-c { animation: drift-c 44s ease-in-out infinite; }
+
+@keyframes live-ping {
+  0% { box-shadow: 0 0 0 0 rgb(52 211 153 / 0.55); }
+  70%, 100% { box-shadow: 0 0 0 7px rgb(52 211 153 / 0); }
+}
+.live-dot { animation: live-ping 2.4s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .aurora-a, .aurora-b, .aurora-c, .live-dot { animation: none; }
+  main, footer, [data-i18n-fade] { transition: none; }
 }

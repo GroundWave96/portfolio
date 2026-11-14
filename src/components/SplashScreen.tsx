@@ -1,37 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Logo } from "./Logo";
+import { useIntro } from "./providers/IntroProvider";
 
-interface SplashScreenProps {
-  finishLoading: () => void;
-}
-
-export function SplashScreen({ finishLoading }: SplashScreenProps) {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false);
-      finishLoading();
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, [finishLoading]);
+/**
+ * Only visible when <html data-splash> is set (first visit of the session).
+ * The logo shares a layoutId with the header logo, so it flies into place.
+ */
+export function SplashScreen() {
+  const { splash } = useIntro();
 
   return (
-    <AnimatePresence>
-      {isVisible && (
+    <AnimatePresence onExitComplete={() => document.documentElement.removeAttribute("data-splash")}>
+      {splash && (
         <motion.div
           key="splash"
-          initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-100 flex items-center justify-center bg-zinc-950"
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className="splash fixed inset-0 z-100 items-center justify-center bg-zinc-950"
+          aria-hidden
         >
-          <motion.div layoutId="logo-container">
-            <Logo className="h-20 w-auto text-zinc-100" />
+          <motion.div layoutId="site-logo" transition={{ type: "spring", stiffness: 260, damping: 30 }}>
+            <Logo className="h-16 w-auto text-zinc-100 sm:h-20" />
           </motion.div>
         </motion.div>
       )}
