@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# export do LinkedIn (referência local)
+docs/curriculo/linkedin-perfil.pdf
