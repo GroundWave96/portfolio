@@ -96,7 +96,7 @@ export function Hero() {
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
           </a>
           <a
-            href={profile.cv}
+            href={profile.cv[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="glass flex h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-medium text-zinc-200 transition-[transform,background-color] hover:bg-zinc-800/60 active:scale-[0.97]"

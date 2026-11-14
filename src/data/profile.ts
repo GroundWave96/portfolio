@@ -7,7 +7,8 @@ export const profile = {
   phone: "5511953725013",
   phoneDisplay: "+55 (11) 9 5372-5013",
   location: "Santo André, SP",
-  cv: "/curriculo.pdf",
+  /** Résumé PDF per site language (sources in docs/curriculo). */
+  cv: { pt: "/curriculo.pdf", en: "/curriculo-en.pdf", es: "/curriculo-es.pdf", it: "/curriculo-it.pdf" },
   links: {
     github: "https://github.com/GroundWave96",
     linkedin: "https://www.linkedin.com/in/gabrielhfpimentel/",

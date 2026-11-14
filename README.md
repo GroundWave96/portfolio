@@ -30,8 +30,8 @@ src/
   components/     Header, CommandPalette (Ctrl+K), SplashScreen, projetos (card, moldura, modal)…
 public/
   projects/       prints dos projetos (1440×810, webp)
-  curriculo.pdf
-docs/curriculo/   arquivo-fonte do currículo (.docx)
+  curriculo*.pdf   currículo em pt, en, es e it
+docs/curriculo/   arquivos-fonte do currículo (.docx, um por idioma)
 ```
 
 ## Tarefas comuns
@@ -44,7 +44,7 @@ docs/curriculo/   arquivo-fonte do currículo (.docx)
 
 **Novo cargo:** adicione em `companies` (`src/data/career.ts`) e os textos em `experience.roles` dos quatro idiomas.
 
-**Atualizar o currículo:** edite `docs/curriculo/curriculo-gabriel-pimentel.docx`, exporte em PDF e substitua `public/curriculo.pdf`.
+**Atualizar o currículo:** edite os `.docx` em `docs/curriculo/` (um por idioma: sem sufixo = português, `-en`, `-es`, `-it`), exporte em PDF e substitua `public/curriculo.pdf` (pt) e `public/curriculo-<idioma>.pdf`. O botão do site abre o PDF do idioma escolhido.
 
 ## Comportamentos
 

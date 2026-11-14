@@ -26,7 +26,7 @@ function RowContent({ icon, label, value, trailing }: { icon: ReactNode; label: 
 }
 
 export function Contact() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const copyEmail = useCopyEmail();
   const arrow = <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden />;
 
@@ -64,7 +64,7 @@ export function Contact() {
             </a>
           </Reveal>
           <Reveal delay={0.2} className="sm:col-span-2">
-            <a href={profile.cv} target="_blank" rel="noopener noreferrer" className={row}>
+            <a href={profile.cv[lang]} target="_blank" rel="noopener noreferrer" className={row}>
               <RowContent icon={<FileText className="size-5" aria-hidden />} label={t.contact.cv} value={t.contact.cv_hint} trailing={arrow} />
             </a>
           </Reveal>

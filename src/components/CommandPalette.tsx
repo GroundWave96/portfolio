@@ -135,7 +135,7 @@ export function CommandPalette() {
         label: t.cmdk.open_cv,
         keywords: "cv curriculo resume pdf",
         icon: <FileText className="size-4" />,
-        run: openUrl(profile.cv),
+        run: openUrl(profile.cv[lang]),
       },
       ...languages.map((l) => ({
         id: `lang-${l}`,
