@@ -14,7 +14,8 @@ export interface Project {
   /** Screenshot paths; alt texts live in the dictionaries (same order). */
   images: string[];
   stack: string[];
-  links: { live?: string; repo?: string };
+  /** Only the live site: source code stays private. */
+  links: { live?: string };
 }
 
 export const projects: Project[] = [
@@ -32,10 +33,7 @@ export const projects: Project[] = [
       "/projects/f1-sessao.webp",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "D1", "PWA"],
-    links: {
-      live: "https://f1dash.pages.dev/",
-      repo: "https://github.com/GroundWave96/f1-dashboard",
-    },
+    links: { live: "https://f1dash.pages.dev/" },
   },
   {
     id: "cuboguia",
@@ -51,10 +49,7 @@ export const projects: Project[] = [
       "/projects/cuboguia-como-funciona.webp",
     ],
     stack: ["TypeScript", "Three.js", "Vite", "Vitest", "Cloudflare Pages"],
-    links: {
-      live: "https://cuboguia.pages.dev/",
-      repo: "https://github.com/GroundWave96/cuboguia",
-    },
+    links: { live: "https://cuboguia.pages.dev/" },
   },
   {
     id: "buscafe",

@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Check, X } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { useLanguage } from "@/i18n/LanguageProvider";
-import { GithubIcon } from "../BrandIcons";
 import { BrowserFrame } from "./BrowserFrame";
 
 interface ProjectModalProps {
@@ -145,17 +144,6 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   >
                     {t.actions.open_site}
                     <ArrowUpRight className="size-4" aria-hidden />
-                  </a>
-                )}
-                {project.links.repo && (
-                  <a
-                    href={project.links.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="glass inline-flex h-10 items-center gap-2 rounded-full px-5 text-sm font-medium text-zinc-200 transition-[transform,background-color] hover:bg-zinc-800/60 active:scale-[0.97]"
-                  >
-                    <GithubIcon className="size-4" />
-                    {t.actions.open_repo}
                   </a>
                 )}
               </div>

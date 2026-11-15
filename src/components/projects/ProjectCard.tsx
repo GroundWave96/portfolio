@@ -4,7 +4,6 @@ import { useRef, type CSSProperties, type PointerEvent } from "react";
 import { ArrowUpRight, Plus } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { useLanguage } from "@/i18n/LanguageProvider";
-import { GithubIcon } from "../BrandIcons";
 import { BrowserFrame } from "./BrowserFrame";
 
 interface ProjectCardProps {
@@ -115,18 +114,6 @@ export function ProjectCard({ project, onOpen, variant = "compact", reverse = fa
             >
               {t.actions.open_site}
               <ArrowUpRight className="size-3.5" aria-hidden />
-            </a>
-          )}
-          {project.links.repo && (
-            <a
-              href={project.links.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${t.actions.open_repo} (GitHub)`}
-              className="glass inline-flex h-9 items-center gap-1.5 rounded-full px-3 text-[13px] sm:px-4 sm:text-sm font-medium text-zinc-300 transition-[transform,background-color] hover:bg-zinc-800/60 active:scale-[0.97]"
-            >
-              <GithubIcon className="size-3.5" />
-              {t.actions.open_repo}
             </a>
           )}
         </div>
