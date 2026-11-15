@@ -3,7 +3,20 @@
     "title": "Gabriel Pimentel | Datos, Automatización y Web",
     "description": "Analista de Proyectos en Timenow (Braskem). Python, SQL, Power BI, Power Platform y desarrollo web con Next.js. Ingeniero Mecánico y tecnólogo en Análisis de Sistemas."
   },
-  "months": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"],
+  "months": [
+    "ene",
+    "feb",
+    "mar",
+    "abr",
+    "may",
+    "jun",
+    "jul",
+    "ago",
+    "sep",
+    "oct",
+    "nov",
+    "dic"
+  ],
   "nav": {
     "projects": "Proyectos",
     "experience": "Experiencia",
@@ -88,7 +101,30 @@
         ],
         "alts": [
           "Página de inicio de CuboGuia con el cubo en 3D",
-          "Pintando los colores del cubo en el modelo 3D"
+          "Tutorial paso a paso resolviendo el 3x3",
+          "Pintando los colores del cubo en el modelo 3D",
+          "Pintando los colores del Megaminx",
+          "Cómo funciona: indicar los colores, validar y seguir el tutorial"
+        ]
+      },
+      "buscafe": {
+        "title": "Buscafé",
+        "summary": "Comparador de cafés brasileños: precio, precio por kg, historial de precios, notas de sabor, tueste y origen de varias tostadurías en un solo lugar.",
+        "context": "Para un cliente, junto a Vitor",
+        "challenge": "Convertir los datos que reúnen la API y los recolectores de precios del cliente en un sitio rápido, atractivo y fácil de comparar, para elegir café por el sabor y el precio, no por el empaque.",
+        "highlights": [
+          "Levantamiento de requisitos directamente con el cliente para entender sus problemas y lo que el sitio debía resolver.",
+          "Catálogo con filtros de sabor, preparación, tueste y región, búsqueda con sugerencias y comparación lado a lado compartible por enlace.",
+          "Página de cada café con historial de precios, costo por taza y datos estructurados para Google.",
+          "Mapas de regiones productoras y fincas, quiz «¿Qué café es para mí?» y guías de café.",
+          "Pruebas de extremo a extremo con Playwright y despliegue continuo en el servidor del cliente con Docker."
+        ],
+        "alts": [
+          "Página de inicio de Buscafé con la búsqueda y las cifras del catálogo",
+          "Catálogo de cafés con filtros",
+          "Página de un café con precio, costo por taza y enlace a la tienda",
+          "Mapa de las regiones productoras de café",
+          "Quiz «¿Qué café es para mí?»"
         ]
       },
       "ortiz": {
@@ -104,7 +140,10 @@
         ],
         "alts": [
           "Página de inicio del sitio de Ortiz Engenharia",
-          "Sección de presentación de Ortiz Engenharia"
+          "Sección de presentación de Ortiz Engenharia",
+          "Sección «Lo que ofrecemos»",
+          "Página Sobre nosotros",
+          "Página de contacto con formulario"
         ]
       },
       "apex": {
@@ -120,7 +159,9 @@
         ],
         "alts": [
           "Página de inicio de Apex Dev Studio",
-          "Sección de servicios de Apex Dev Studio"
+          "Sección de servicios de Apex Dev Studio",
+          "Portafolio de proyectos de Apex Dev Studio",
+          "Preguntas frecuentes sobre sitios, SEO y marketing digital"
         ]
       }
     }
@@ -134,9 +175,15 @@
     "show_less": "Ocultar detalles",
     "promotion": "Ascendido",
     "companies": {
-      "timenow": { "note": "Asignado en Braskem" },
-      "apex": { "note": "Cofundador" },
-      "mastermr": { "note": "1 año y 10 meses" }
+      "timenow": {
+        "note": "Asignado en Braskem"
+      },
+      "apex": {
+        "note": "Cofundador"
+      },
+      "mastermr": {
+        "note": "1 año y 10 meses"
+      }
     },
     "roles": {
       "timenow-analyst": {
@@ -212,19 +259,35 @@
         "title": "Análisis y Desarrollo de Sistemas",
         "school": "FATEC São Caetano do Sul · Tecnólogo",
         "description": "Ingeniería de software y desarrollo web, desde algoritmos en C/C++ y Java hasta inteligencia artificial y arquitectura de sistemas.",
-        "tags": ["C/C++", "Java", "Web", "Inteligencia Artificial", "Bases de datos"]
+        "tags": [
+          "C/C++",
+          "Java",
+          "Web",
+          "Inteligencia Artificial",
+          "Bases de datos"
+        ]
       },
       "uninove": {
         "title": "Ingeniería Mecánica",
         "school": "UNINOVE · Licenciatura",
         "description": "Base sólida en matemáticas y estadística, con cálculo estructural, aerodinámica y CNC. De aquí viene el rigor analítico que aplico a los datos.",
-        "tags": ["Estadística", "Matemática aplicada", "AutoCAD", "CNC"]
+        "tags": [
+          "Estadística",
+          "Matemática aplicada",
+          "AutoCAD",
+          "CNC"
+        ]
       },
       "pentagono": {
         "title": "Técnico en Mecatrónica",
         "school": "Colégio Pentágono · Bachillerato técnico",
         "description": "Mecánica, electrónica y programación en la práctica, con proyectos como paneles solares con seguimiento y Arduino.",
-        "tags": ["Arduino", "Electrónica", "Automatización", "C"]
+        "tags": [
+          "Arduino",
+          "Electrónica",
+          "Automatización",
+          "C"
+        ]
       }
     }
   },

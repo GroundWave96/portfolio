@@ -3,7 +3,20 @@
     "title": "Gabriel Pimentel | Data, Automation & Web",
     "description": "Project Analyst at Timenow (Braskem). Python, SQL, Power BI, Power Platform and web development with Next.js. Mechanical Engineer and Systems Analysis graduate."
   },
-  "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  "months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
   "nav": {
     "projects": "Projects",
     "experience": "Experience",
@@ -88,7 +101,30 @@
         ],
         "alts": [
           "CuboGuia home page with the 3D cube",
-          "Painting the cube colours on the 3D model"
+          "Step-by-step tutorial solving the 3x3",
+          "Painting the cube colours on the 3D model",
+          "Painting the Megaminx colours",
+          "How it works: enter the colours, validate and follow the tutorial"
+        ]
+      },
+      "buscafe": {
+        "title": "Buscafé",
+        "summary": "A Brazilian coffee comparison site: price, price per kg, price history, tasting notes, roast and origin from many roasters in one place.",
+        "context": "Client project, with Vitor",
+        "challenge": "Turn the data gathered by the client's API and price scrapers into a fast, good-looking site that makes coffee easy to compare, so people choose by flavour and price rather than by the packaging.",
+        "highlights": [
+          "Requirements gathered directly with the client to understand their pain points and what the site had to solve.",
+          "Catalogue with flavour, brew method, roast and region filters, search suggestions and side-by-side comparison shareable by link.",
+          "A page for every coffee with price history, cost per cup and structured data for Google.",
+          "Maps of producing regions and farms, a \"Which coffee is for me?\" quiz and coffee guides.",
+          "End-to-end tests with Playwright and continuous deployment to the client's server with Docker."
+        ],
+        "alts": [
+          "Buscafé home page with search and catalogue figures",
+          "Coffee catalogue with filters",
+          "Coffee page with price, cost per cup and a link to the shop",
+          "Map of coffee-producing regions",
+          "\"Which coffee is for me?\" quiz"
         ]
       },
       "ortiz": {
@@ -104,7 +140,10 @@
         ],
         "alts": [
           "Ortiz Engenharia home page",
-          "Ortiz Engenharia introduction section"
+          "Ortiz Engenharia introduction section",
+          "\"What we offer\" section",
+          "About us page",
+          "Contact page with form"
         ]
       },
       "apex": {
@@ -120,7 +159,9 @@
         ],
         "alts": [
           "Apex Dev Studio home page",
-          "Apex Dev Studio services section"
+          "Apex Dev Studio services section",
+          "Apex Dev Studio project portfolio",
+          "FAQ about websites, SEO and digital marketing"
         ]
       }
     }
@@ -134,9 +175,15 @@
     "show_less": "Hide details",
     "promotion": "Promoted",
     "companies": {
-      "timenow": { "note": "On site at Braskem" },
-      "apex": { "note": "Co-founder" },
-      "mastermr": { "note": "1 year 10 months" }
+      "timenow": {
+        "note": "On site at Braskem"
+      },
+      "apex": {
+        "note": "Co-founder"
+      },
+      "mastermr": {
+        "note": "1 year 10 months"
+      }
     },
     "roles": {
       "timenow-analyst": {
@@ -212,19 +259,35 @@
         "title": "Systems Analysis and Development",
         "school": "FATEC São Caetano do Sul · Technologist degree",
         "description": "Software engineering and web development, from algorithms in C/C++ and Java to artificial intelligence and systems architecture.",
-        "tags": ["C/C++", "Java", "Web", "Artificial Intelligence", "Databases"]
+        "tags": [
+          "C/C++",
+          "Java",
+          "Web",
+          "Artificial Intelligence",
+          "Databases"
+        ]
       },
       "uninove": {
         "title": "Mechanical Engineering",
         "school": "UNINOVE · Bachelor's degree",
         "description": "Strong grounding in maths and statistics, with structural analysis, aerodynamics and CNC. It's where my analytical rigour with data comes from.",
-        "tags": ["Statistics", "Applied maths", "AutoCAD", "CNC"]
+        "tags": [
+          "Statistics",
+          "Applied maths",
+          "AutoCAD",
+          "CNC"
+        ]
       },
       "pentagono": {
         "title": "Mechatronics Technician",
         "school": "Colégio Pentágono · Technical high school",
         "description": "Hands-on mechanics, electronics and programming, with projects such as sun-tracking solar panels and Arduino builds.",
-        "tags": ["Arduino", "Electronics", "Automation", "C"]
+        "tags": [
+          "Arduino",
+          "Electronics",
+          "Automation",
+          "C"
+        ]
       }
     }
   },

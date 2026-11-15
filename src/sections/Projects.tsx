@@ -23,6 +23,9 @@ export function Projects() {
 
   const own = projects.filter((p) => p.kind === "own");
   const client = projects.filter((p) => p.kind === "client");
+  // A featured client project gets a full-width card; the rest share a two-column grid.
+  const clientFeatured = client.filter((p) => p.featured);
+  const clientGrid = client.filter((p) => !p.featured);
   const openProject = projects.find((p) => p.id === openId) ?? null;
 
   return (
@@ -42,8 +45,15 @@ export function Projects() {
         </div>
 
         <h3 className="eyebrow mt-14 mb-4">{t.projects.client}</h3>
-        <div className="grid gap-5 md:grid-cols-2">
-          {client.map((p, i) => (
+        <div className="flex flex-col gap-5">
+          {clientFeatured.map((p) => (
+            <Reveal key={p.id} delay={0.05}>
+              <ProjectCard project={p} variant="featured" onOpen={() => setOpenId(p.id)} />
+            </Reveal>
+          ))}
+        </div>
+        <div className={`grid gap-5 md:grid-cols-2 ${clientFeatured.length ? "mt-5" : ""}`}>
+          {clientGrid.map((p, i) => (
             <Reveal key={p.id} delay={i * 0.08} className="h-full">
               <ProjectCard project={p} onOpen={() => setOpenId(p.id)} />
             </Reveal>

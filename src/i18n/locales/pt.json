@@ -3,7 +3,20 @@
     "title": "Gabriel Pimentel | Dados, Automação e Web",
     "description": "Analista de Projetos na Timenow (Braskem). Python, SQL, Power BI, Power Platform e desenvolvimento web com Next.js. Engenheiro Mecânico e tecnólogo em ADS."
   },
-  "months": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
+  "months": [
+    "jan",
+    "fev",
+    "mar",
+    "abr",
+    "mai",
+    "jun",
+    "jul",
+    "ago",
+    "set",
+    "out",
+    "nov",
+    "dez"
+  ],
   "nav": {
     "projects": "Projetos",
     "experience": "Experiência",
@@ -88,7 +101,30 @@
         ],
         "alts": [
           "Página inicial do CuboGuia com o cubo em 3D",
-          "Pintura das cores do cubo no modelo 3D"
+          "Tutorial passo a passo resolvendo o 3x3",
+          "Pintura das cores do cubo no modelo 3D",
+          "Pintura das cores do Megaminx",
+          "Como funciona: informar as cores, validar e seguir o tutorial"
+        ]
+      },
+      "buscafe": {
+        "title": "Buscafé",
+        "summary": "Comparador de cafés brasileiros: preço, preço por kg, histórico de preço, notas de sabor, torra e origem de várias torrefações num lugar só.",
+        "context": "Para um cliente, em parceria com Vitor",
+        "challenge": "Transformar os dados que a API e os coletores de preço do cliente reúnem num site rápido, bonito e fácil de comparar, para escolher café pelo sabor e pelo preço, e não pela embalagem.",
+        "highlights": [
+          "Levantamento direto com o cliente para entender as dores e o que o site precisava resolver.",
+          "Catálogo com filtros de sabor, preparo, torra e região, busca com sugestões e comparação lado a lado por link.",
+          "Página de cada café com histórico de preço, custo por xícara e dados estruturados para o Google.",
+          "Mapas de regiões produtoras e fazendas, quiz \"Qual café é pra mim?\" e guias de café.",
+          "Testes de ponta a ponta com Playwright e deploy contínuo no servidor do cliente com Docker."
+        ],
+        "alts": [
+          "Página inicial do Buscafé com a busca e os números do catálogo",
+          "Catálogo de cafés com filtros",
+          "Página de um café com preço, custo por xícara e compra na loja",
+          "Mapa das regiões produtoras de café",
+          "Quiz \"Qual café é pra mim?\""
         ]
       },
       "ortiz": {
@@ -104,7 +140,10 @@
         ],
         "alts": [
           "Página inicial do site da Ortiz Engenharia",
-          "Seção de apresentação da Ortiz Engenharia"
+          "Seção de apresentação da Ortiz Engenharia",
+          "Seção \"O que oferecemos\"",
+          "Página Sobre nós",
+          "Página de contato com formulário"
         ]
       },
       "apex": {
@@ -120,7 +159,9 @@
         ],
         "alts": [
           "Página inicial da Apex Dev Studio",
-          "Seção de serviços da Apex Dev Studio"
+          "Seção de serviços da Apex Dev Studio",
+          "Portfólio de projetos da Apex Dev Studio",
+          "Perguntas frequentes sobre sites, SEO e marketing digital"
         ]
       }
     }
@@ -134,9 +175,15 @@
     "show_less": "Ocultar detalhes",
     "promotion": "Promovido",
     "companies": {
-      "timenow": { "note": "Alocado na Braskem" },
-      "apex": { "note": "Co-fundador" },
-      "mastermr": { "note": "1 ano e 10 meses" }
+      "timenow": {
+        "note": "Alocado na Braskem"
+      },
+      "apex": {
+        "note": "Co-fundador"
+      },
+      "mastermr": {
+        "note": "1 ano e 10 meses"
+      }
     },
     "roles": {
       "timenow-analyst": {
@@ -212,19 +259,35 @@
         "title": "Análise e Desenvolvimento de Sistemas",
         "school": "FATEC São Caetano do Sul · Tecnólogo",
         "description": "Engenharia de software e desenvolvimento web, de algoritmos em C/C++ e Java a inteligência artificial e arquitetura de sistemas.",
-        "tags": ["C/C++", "Java", "Web", "Inteligência Artificial", "Banco de dados"]
+        "tags": [
+          "C/C++",
+          "Java",
+          "Web",
+          "Inteligência Artificial",
+          "Banco de dados"
+        ]
       },
       "uninove": {
         "title": "Engenharia Mecânica",
         "school": "UNINOVE · Bacharelado",
         "description": "Base forte em matemática e estatística, com cálculo estrutural, aerodinâmica e CNC. Daqui vem o rigor analítico que levo para os dados.",
-        "tags": ["Estatística", "Matemática aplicada", "AutoCAD", "CNC"]
+        "tags": [
+          "Estatística",
+          "Matemática aplicada",
+          "AutoCAD",
+          "CNC"
+        ]
       },
       "pentagono": {
         "title": "Técnico em Mecatrônica",
         "school": "Colégio Pentágono · Ensino Médio Técnico",
         "description": "Mecânica, eletrônica e programação na prática, com projetos como painéis solares com rastreamento e Arduino.",
-        "tags": ["Arduino", "Eletrônica", "Automação", "C"]
+        "tags": [
+          "Arduino",
+          "Eletrônica",
+          "Automação",
+          "C"
+        ]
       }
     }
   },

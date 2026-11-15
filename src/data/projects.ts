@@ -45,13 +45,34 @@ export const projects: Project[] = [
     accent: "#6d7cff",
     images: [
       "/projects/cuboguia-inicio.webp",
+      "/projects/cuboguia-tutorial.webp",
       "/projects/cuboguia-3d.webp",
+      "/projects/cuboguia-megaminx.webp",
+      "/projects/cuboguia-como-funciona.webp",
     ],
     stack: ["TypeScript", "Three.js", "Vite", "Vitest", "Cloudflare Pages"],
     links: {
       live: "https://cuboguia.pages.dev/",
       repo: "https://github.com/GroundWave96/cuboguia",
     },
+  },
+  {
+    id: "buscafe",
+    kind: "client",
+    year: 2026,
+    featured: true,
+    inProgress: true,
+    accent: "#c2412d",
+    images: [
+      "/projects/buscafe-inicio.webp",
+      "/projects/buscafe-catalogo.webp",
+      "/projects/buscafe-cafe.webp",
+      "/projects/buscafe-regioes.webp",
+      "/projects/buscafe-quiz.webp",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Radix UI", "Playwright", "Docker"],
+    // Temporary address while the client validates the new version.
+    links: { live: "https://2-31-150-230.sslip.io/" },
   },
   {
     id: "ortiz",
@@ -61,6 +82,9 @@ export const projects: Project[] = [
     images: [
       "/projects/ortiz-inicio.webp",
       "/projects/ortiz-sobre.webp",
+      "/projects/ortiz-oferecemos.webp",
+      "/projects/ortiz-quem-somos.webp",
+      "/projects/ortiz-contato.webp",
     ],
     stack: ["React", "Vite", "TypeScript", "Figma", "SEO"],
     links: { live: "https://ortizprojetoeengenharia.eng.br/" },
@@ -74,6 +98,8 @@ export const projects: Project[] = [
     images: [
       "/projects/apex-inicio.webp",
       "/projects/apex-servicos.webp",
+      "/projects/apex-portfolio.webp",
+      "/projects/apex-faq.webp",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudflare Workers", "SEO"],
     links: { live: "https://www.apexdevstudio.workers.dev/pt" },
