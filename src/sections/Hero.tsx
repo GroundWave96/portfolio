@@ -7,6 +7,8 @@ import { useIntro } from "@/components/providers/IntroProvider";
 import { profile, whatsappUrl } from "@/data/profile";
 import { useCopyEmail } from "@/lib/useCopyEmail";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/BrandIcons";
+import { HeroName } from "@/components/hero/HeroName";
+import { HeroGrid } from "@/components/hero/HeroGrid";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -48,8 +50,9 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col items-center justify-center px-5 pt-28 pb-20 text-center"
+      className="relative isolate flex min-h-[100svh] flex-col items-center justify-center px-5 pt-28 pb-20 text-center"
     >
+      <HeroGrid />
       {/* key={lang} replays the entrance when the language changes */}
       <motion.div key={lang} initial="hidden" animate={state} className="flex max-w-3xl flex-col items-center">
         <motion.a
@@ -65,9 +68,7 @@ export function Hero() {
           </span>
         </motion.a>
 
-        <h1 className="text-[clamp(2.75rem,10vw,5.5rem)] leading-[1.02] font-medium tracking-[-0.035em] text-zinc-50">
-          <Words text={t.hero.name} />
-        </h1>
+        <HeroName name={t.hero.name} ready={ready} />
 
         <p className="mt-6 max-w-xl text-lg text-pretty text-zinc-400 sm:text-xl">
           <Words text={t.hero.tagline} />

@@ -165,6 +165,12 @@
           "Domande frequenti su siti, SEO e marketing digitale"
         ]
       }
+    },
+    "page": {
+      "back": "Tutti i progetti",
+      "screens": "Schermate",
+      "next": "Progetto successivo",
+      "full_page": "Pagina del progetto"
     }
   },
   "experience": {
@@ -337,5 +343,10 @@
     "navigate": "naviga",
     "select": "apri",
     "close": "chiudi"
+  },
+  "suggest": {
+    "text": "Questo sito è disponibile anche in italiano.",
+    "action": "Vedi in italiano",
+    "dismiss": "Chiudi"
   }
 }

@@ -8,11 +8,14 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { useIntro } from "./providers/IntroProvider";
 import { OPEN_PALETTE_EVENT, SECTIONS, useActiveSection } from "@/lib/sections";
+import { homePath } from "@/lib/i18nPaths";
 
 const spring: Transition = { type: "spring", stiffness: 320, damping: 30, mass: 0.6 };
 
-export function Header() {
-  const { t } = useLanguage();
+/** onHome=false (project pages): section links point back to the home page of the current language. */
+export function Header({ onHome = true }: { onHome?: boolean }) {
+  const { t, lang } = useLanguage();
+  const base = onHome ? "" : homePath(lang);
   const { splash, hadSplash } = useIntro();
   const active = useActiveSection();
   const [open, setOpen] = useState(false);
@@ -53,7 +56,7 @@ export function Header() {
         <div className="flex min-w-12 shrink-0 items-center">
           {!splash && (
             <motion.a
-              href="#top"
+              href={onHome ? "#top" : homePath(lang)}
               layoutId={hadSplash ? "site-logo" : undefined}
               initial={hadSplash ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -74,7 +77,7 @@ export function Header() {
               return (
                 <li key={s.id}>
                   <a
-                    href={`#${s.id}`}
+                    href={`${base}#${s.id}`}
                     aria-current={isActive ? "location" : undefined}
                     className={`relative block rounded-full px-3.5 py-1.5 text-sm font-medium whitespace-nowrap transition-colors ${
                       isActive ? "text-zinc-50" : "text-zinc-400 hover:text-zinc-100"
@@ -153,7 +156,7 @@ export function Header() {
                   transition={{ ...spring, delay: 0.04 * i }}
                 >
                   <a
-                    href={`#${s.id}`}
+                    href={`${base}#${s.id}`}
                     onClick={() => setOpen(false)}
                     className={`flex items-center justify-between rounded-2xl px-3 py-3 text-[17px] tracking-tight transition-colors hover:bg-white/5 ${
                       active === s.id ? "text-white" : "text-zinc-300"

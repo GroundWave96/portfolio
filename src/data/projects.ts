@@ -4,6 +4,8 @@ export type ProjectId = keyof Dictionary["projects"]["items"];
 
 export interface Project {
   id: ProjectId;
+  /** URL slug of the project page (same in every language). */
+  slug: string;
   /** "own" = personal product, "client" = delivered for a client. */
   kind: "own" | "client";
   year: number;
@@ -21,6 +23,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "f1",
+    slug: "f1-dashboard",
     kind: "own",
     year: 2026,
     featured: true,
@@ -37,6 +40,7 @@ export const projects: Project[] = [
   },
   {
     id: "cuboguia",
+    slug: "cuboguia",
     kind: "own",
     year: 2026,
     featured: true,
@@ -54,6 +58,7 @@ export const projects: Project[] = [
   },
   {
     id: "buscafe",
+    slug: "buscafe",
     kind: "client",
     year: 2026,
     featured: true,
@@ -70,6 +75,7 @@ export const projects: Project[] = [
   },
   {
     id: "ortiz",
+    slug: "ortiz-engenharia",
     kind: "client",
     year: 2026,
     accent: "#4f8fd6",
@@ -85,6 +91,7 @@ export const projects: Project[] = [
   },
   {
     id: "apex",
+    slug: "apex-dev-studio",
     kind: "client",
     year: 2026,
     accent: "#f26b1d",
@@ -98,3 +105,5 @@ export const projects: Project[] = [
     links: { live: "https://www.apexdevstudio.workers.dev/pt" },
   },
 ];
+
+export const projectBySlug = (slug: string) => projects.find((p) => p.slug === slug);

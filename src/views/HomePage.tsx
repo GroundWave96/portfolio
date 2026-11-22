@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { SplashScreen } from "@/components/SplashScreen";
 import { CommandPalette } from "@/components/CommandPalette";
 import { Footer } from "@/components/Footer";
+import { LangSuggest } from "@/components/LangSuggest";
 import { Hero } from "@/sections/Hero";
 import { Projects } from "@/sections/Projects";
 import { Experience } from "@/sections/Experience";
@@ -9,7 +10,7 @@ import { About } from "@/sections/About";
 import { Education } from "@/sections/Education";
 import { Contact } from "@/sections/Contact";
 
-export default function Home() {
+export function HomePage() {
   return (
     <>
       <SplashScreen />
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <LangSuggest />
     </>
   );
 }

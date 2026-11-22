@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { screenshotSrcSet } from "@/lib/images";
 
 interface BrowserFrameProps {
   images: string[];
@@ -14,10 +15,12 @@ interface BrowserFrameProps {
   /** Larger arrows for the details dialog. */
   large?: boolean;
   priority?: boolean;
+  /** Rendered width hint for srcset (phones pick the 720px copy). */
+  sizes?: string;
 }
 
 /** Screenshots inside a minimal browser window, crossfading with dots and swipe. */
-export function BrowserFrame({ images, alts, url, interval = 4500, large = false, priority = false }: BrowserFrameProps) {
+export function BrowserFrame({ images, alts, url, interval = 4500, large = false, priority = false, sizes = "(min-width: 1024px) 640px, 100vw" }: BrowserFrameProps) {
   const { t } = useLanguage();
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -63,6 +66,8 @@ export function BrowserFrame({ images, alts, url, interval = 4500, large = false
           <motion.img
             key={images[index]}
             src={images[index]}
+            srcSet={screenshotSrcSet(images[index])}
+            sizes={sizes}
             alt={alts[index] ?? ""}
             width={1440}
             height={810}

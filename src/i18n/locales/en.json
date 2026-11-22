@@ -165,6 +165,12 @@
           "FAQ about websites, SEO and digital marketing"
         ]
       }
+    },
+    "page": {
+      "back": "All projects",
+      "screens": "Screens",
+      "next": "Next project",
+      "full_page": "Project page"
     }
   },
   "experience": {
@@ -337,5 +343,10 @@
     "navigate": "navigate",
     "select": "open",
     "close": "close"
+  },
+  "suggest": {
+    "text": "This site is also available in English.",
+    "action": "View in English",
+    "dismiss": "Dismiss"
   }
 }

@@ -7,6 +7,7 @@ import { useLanguage } from "@/i18n/LanguageProvider";
 import { projects } from "@/data/projects";
 import { profile, whatsappUrl } from "@/data/profile";
 import { OPEN_PALETTE_EVENT, OPEN_PROJECT_EVENT, SECTIONS } from "@/lib/sections";
+import { homePath, projectPath } from "@/lib/i18nPaths";
 import { useCopyEmail } from "@/lib/useCopyEmail";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "./BrandIcons";
 
@@ -76,7 +77,12 @@ export function CommandPalette() {
   }, [open]);
 
   const items = useMemo<Item[]>(() => {
-    const goTo = (id: string) => () => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    // On a project page the sections live on the home page of the same language.
+    const goTo = (id: string) => () => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+      else window.location.assign(`${homePath(lang)}#${id}`);
+    };
     const openUrl = (url: string) => () => window.open(url, "_blank", "noopener,noreferrer");
     return [
       ...SECTIONS.map((s) => ({
@@ -95,7 +101,9 @@ export function CommandPalette() {
         keywords: p.stack.join(" "),
         icon: <Layers className="size-4" />,
         run: () => {
-          document.getElementById("projetos")?.scrollIntoView({ behavior: "smooth" });
+          const section = document.getElementById("projetos");
+          if (!section) return window.location.assign(projectPath(lang, p.slug));
+          section.scrollIntoView({ behavior: "smooth" });
           window.dispatchEvent(new CustomEvent(OPEN_PROJECT_EVENT, { detail: p.id }));
         },
       })),

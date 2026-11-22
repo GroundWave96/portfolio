@@ -165,6 +165,12 @@
           "Preguntas frecuentes sobre sitios, SEO y marketing digital"
         ]
       }
+    },
+    "page": {
+      "back": "Todos los proyectos",
+      "screens": "Pantallas",
+      "next": "Siguiente proyecto",
+      "full_page": "Página del proyecto"
     }
   },
   "experience": {
@@ -337,5 +343,10 @@
     "navigate": "navegar",
     "select": "abrir",
     "close": "cerrar"
+  },
+  "suggest": {
+    "text": "Este sitio también está en español.",
+    "action": "Ver en español",
+    "dismiss": "Cerrar"
   }
 }

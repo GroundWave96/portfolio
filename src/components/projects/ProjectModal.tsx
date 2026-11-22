@@ -2,10 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight, Check, X } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, X } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { BrowserFrame } from "./BrowserFrame";
+import { projectPath } from "@/lib/i18nPaths";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -15,7 +16,7 @@ interface ProjectModalProps {
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const panelRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
 
@@ -102,7 +103,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             </div>
 
             <div className="overflow-y-auto overscroll-contain px-5 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:px-7">
-              <BrowserFrame images={project.images} alts={copy.alts} url={project.links.live} interval={0} large priority />
+              <BrowserFrame images={project.images} alts={copy.alts} url={project.links.live} interval={0} large priority sizes="(min-width: 768px) 720px, 100vw" />
 
               <p className="mt-6 text-pretty text-zinc-300">{copy.summary}</p>
 
@@ -146,6 +147,13 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     <ArrowUpRight className="size-4" aria-hidden />
                   </a>
                 )}
+                <a
+                  href={projectPath(lang, project.slug)}
+                  className="glass inline-flex h-10 items-center gap-2 rounded-full px-5 text-sm font-medium text-zinc-200 transition-[transform,background-color] hover:bg-zinc-800/60 active:scale-[0.97]"
+                >
+                  {t.projects.page.full_page}
+                  <ArrowRight className="size-4" aria-hidden />
+                </a>
               </div>
             </div>
           </motion.div>

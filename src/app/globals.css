@@ -65,13 +65,6 @@ html[data-splash] body {
   overflow: hidden;
 }
 
-/* Non-Portuguese visitors: hide text until the right language is applied. */
-html[data-i18n-pending] main,
-html[data-i18n-pending] header,
-html[data-i18n-pending] footer {
-  opacity: 0;
-}
-
 /* Language switch crossfade. */
 main,
 footer,
