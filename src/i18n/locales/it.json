@@ -89,21 +89,23 @@
       },
       "cuboguia": {
         "title": "CuboGuia",
-        "summary": "Indichi com'è il tuo cubo di Rubik, colorando il modello 3D o con la fotocamera, e ricevi un tutorial animato passo dopo passo.",
+        "summary": "Indichi com'è il tuo cubo di Rubik, colorando il modello 3D o con la fotocamera, e ricevi un tutorial animato passo dopo passo. Sono 10 puzzle, dal 2x2 al 7x7.",
         "context": "Progetto personale",
         "challenge": "Insegnare a risolvere vari puzzle partendo dallo stato reale del cubo di ognuno, non da un cubo generico.",
         "highlights": [
-          "Modelli 3D in Three.js per 2x2, 3x3, Pyraminx e Megaminx, con ogni rotazione animata.",
+          "Tutorial animati in 3D (Three.js) per 10 puzzle: dal 2x2 al 7x7, Pyraminx, Skewb, Megaminx e Mastermorphix.",
           "Lettura dei colori con la fotocamera del telefono o colorando direttamente il modello.",
-          "Risolutori propri: metodo principiante e CFOP per il 3x3, soluzione ottima per 2x2 e Pyraminx.",
-          "Test automatici del risolutore e della lettura dei colori con Vitest."
+          "Risolutori propri, dal metodo principiante al CFOP, con test automatici in Vitest.",
+          "Cronometro in stile gara, algoritmi OLL e PLL animati e guida alla notazione.",
+          "Sito in portoghese, inglese e spagnolo, con tema chiaro e scuro."
         ],
         "alts": [
           "Home page di CuboGuia con il cubo in 3D",
           "Tutorial passo dopo passo che risolve il 3x3",
           "Colorazione del cubo sul modello 3D",
-          "Colorazione del Megaminx",
-          "Come funziona: indicare i colori, validare e seguire il tutorial"
+          "Algoritmi OLL e PLL animati",
+          "Cronometro in stile gara",
+          "Colorazione del Megaminx"
         ]
       },
       "buscafe": {
@@ -154,7 +156,7 @@
           "Sito multilingue con Next.js pubblicato su Cloudflare.",
           "Obiettivi di Core Web Vitals definiti fin dall'inizio.",
           "Identità visiva e animazioni proprie.",
-          "Ancora in sviluppo: la versione finale è in arrivo."
+          "Casi studio, blog e FAQ che mostrano il lavoro e aiutano ad attirare clienti."
         ],
         "alts": [
           "Home page di Apex Dev Studio",

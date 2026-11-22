@@ -89,21 +89,23 @@
       },
       "cuboguia": {
         "title": "CuboGuia",
-        "summary": "Tell it how your Rubik's cube looks, by painting the 3D model or using the camera, and get an animated step-by-step tutorial.",
+        "summary": "Tell it how your Rubik's cube looks, by painting the 3D model or using the camera, and get an animated step-by-step tutorial. It covers 10 puzzles, from 2x2 to 7x7.",
         "context": "Personal project",
         "challenge": "Teach people to solve several puzzles starting from the real state of their own cube, not a generic one.",
         "highlights": [
-          "Three.js 3D models for 2x2, 3x3, Pyraminx and Megaminx, with every turn animated.",
+          "Animated 3D tutorials (Three.js) for 10 puzzles: 2x2 to 7x7, Pyraminx, Skewb, Megaminx and Mastermorphix.",
           "Colour reading through the phone camera, or painting straight on the model.",
-          "Custom solvers: beginner method and CFOP for 3x3, optimal solution for 2x2 and Pyraminx.",
-          "Automated tests for the solver and colour reading with Vitest."
+          "Custom solvers, from the beginner method to CFOP, with automated tests in Vitest.",
+          "Competition-style timer, animated OLL and PLL algorithms and a notation guide.",
+          "Available in Portuguese, English and Spanish, with light and dark themes."
         ],
         "alts": [
           "CuboGuia home page with the 3D cube",
           "Step-by-step tutorial solving the 3x3",
           "Painting the cube colours on the 3D model",
-          "Painting the Megaminx colours",
-          "How it works: enter the colours, validate and follow the tutorial"
+          "Animated OLL and PLL algorithms",
+          "Competition-style timer",
+          "Painting the Megaminx colours"
         ]
       },
       "buscafe": {
@@ -154,7 +156,7 @@
           "Multilingual Next.js site deployed on Cloudflare.",
           "Core Web Vitals targets set from day one.",
           "Custom visual identity and animations.",
-          "Still in progress: the final version is on its way."
+          "Portfolio case studies, a blog and an FAQ that show the work and help bring in clients."
         ],
         "alts": [
           "Apex Dev Studio home page",

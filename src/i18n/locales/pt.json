@@ -89,21 +89,23 @@
       },
       "cuboguia": {
         "title": "CuboGuia",
-        "summary": "Você informa como o seu cubo mágico está, pintando no modelo 3D ou pela câmera, e recebe um tutorial animado, passo a passo.",
+        "summary": "Você informa como o seu cubo mágico está, pintando no modelo 3D ou pela câmera, e recebe um tutorial animado, passo a passo. São 10 puzzles, do 2x2 ao 7x7.",
         "context": "Projeto pessoal",
         "challenge": "Ensinar a resolver vários puzzles a partir do estado real do cubo de cada pessoa, e não de um cubo genérico.",
         "highlights": [
-          "Modelos 3D em Three.js para 2x2, 3x3, Pyraminx e Megaminx, com animação de cada giro.",
+          "Tutoriais animados em 3D (Three.js) para 10 puzzles: do 2x2 ao 7x7, Pyraminx, Skewb, Megaminx e Mastermorphix.",
           "Leitura das cores pela câmera do celular ou pintura direto no modelo.",
-          "Solucionadores próprios: método de iniciante e CFOP no 3x3, solução ótima no 2x2 e no Pyraminx.",
-          "Testes automatizados do solucionador e da leitura de cores com Vitest."
+          "Solucionadores próprios, do método de iniciante ao CFOP, com testes automatizados em Vitest.",
+          "Cronômetro estilo competição, algoritmos OLL e PLL com animação e guia de notação.",
+          "Site em português, inglês e espanhol, com tema claro e escuro."
         ],
         "alts": [
           "Página inicial do CuboGuia com o cubo em 3D",
           "Tutorial passo a passo resolvendo o 3x3",
           "Pintura das cores do cubo no modelo 3D",
-          "Pintura das cores do Megaminx",
-          "Como funciona: informar as cores, validar e seguir o tutorial"
+          "Algoritmos OLL e PLL com animação",
+          "Cronômetro estilo competição",
+          "Pintura das cores do Megaminx"
         ]
       },
       "buscafe": {
@@ -154,7 +156,7 @@
           "Site multilíngue com Next.js publicado na Cloudflare.",
           "Metas de Core Web Vitals definidas desde o início.",
           "Identidade visual e animações próprias.",
-          "Ainda em desenvolvimento: a versão final está a caminho."
+          "Cases de portfólio, blog e FAQ que mostram o trabalho e ajudam a atrair clientes."
         ],
         "alts": [
           "Página inicial da Apex Dev Studio",

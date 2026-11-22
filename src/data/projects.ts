@@ -45,8 +45,9 @@ export const projects: Project[] = [
       "/projects/cuboguia-inicio.webp",
       "/projects/cuboguia-tutorial.webp",
       "/projects/cuboguia-3d.webp",
+      "/projects/cuboguia-algoritmos.webp",
+      "/projects/cuboguia-cronometro.webp",
       "/projects/cuboguia-megaminx.webp",
-      "/projects/cuboguia-como-funciona.webp",
     ],
     stack: ["TypeScript", "Three.js", "Vite", "Vitest", "Cloudflare Pages"],
     links: { live: "https://cuboguia.pages.dev/" },
@@ -56,7 +57,6 @@ export const projects: Project[] = [
     kind: "client",
     year: 2026,
     featured: true,
-    inProgress: true,
     accent: "#c2412d",
     images: [
       "/projects/buscafe-inicio.webp",
@@ -66,8 +66,7 @@ export const projects: Project[] = [
       "/projects/buscafe-quiz.webp",
     ],
     stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Radix UI", "Playwright", "Docker"],
-    // Temporary address while the client validates the new version.
-    links: { live: "https://2-31-150-230.sslip.io/" },
+    links: { live: "https://buscafe.online/" },
   },
   {
     id: "ortiz",
@@ -88,7 +87,6 @@ export const projects: Project[] = [
     id: "apex",
     kind: "client",
     year: 2026,
-    inProgress: true,
     accent: "#f26b1d",
     images: [
       "/projects/apex-inicio.webp",
